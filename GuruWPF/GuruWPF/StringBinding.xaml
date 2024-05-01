@@ -1,0 +1,24 @@
+﻿<Window x:Class="GuruWPF.StringBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="StringBinding" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer x:Name="ScrollViewer"  HorizontalScrollBarVisibility="Visible">
+            <ItemsControl Name="lststrings" Background="Beige" Grid.Column="0"   Width="100" Height="100" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Background="LightBlue" Text="{Binding}" ></TextBlock>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="GuruWPF.Controls.LookLessWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF.Controls" Opacity="1" BorderBrush="Green" BorderThickness="3" ResizeMode="CanResizeWithGrip" Topmost="False"
+        mc:Ignorable="d" WindowStyle="None" AllowsTransparency="True" Background="Transparent" 
+
+        Title="LookLessWindow" Height="450" Width="800">
+    <!--Template="{Binding Source={StaticResource windowTemplate}}"-->
+    <Window.Resources>
+        <Label x:Key="lbl1" Content="Sample of content beinging" FontSize="28" FontWeight="Bold" Foreground="Red"></Label>
+    </Window.Resources>
+    <Grid>
+        <Label Content="{StaticResource lbl1}"></Label>
+        
+    </Grid>
+</Window>

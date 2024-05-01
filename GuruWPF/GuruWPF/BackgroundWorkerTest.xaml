@@ -1,0 +1,18 @@
+﻿<Window x:Class="GuruWPF.BackgroundWorkerTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="BackgroundWorkerTest" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Display Counter :" FontWeight="Bold" HorizontalAlignment="Left" Margin="25,59,0,0" VerticalAlignment="Top" Width="172"/>
+        <Label x:Name="lblCounter" Content="Label" HorizontalAlignment="Left" Margin="250,59,0,0" VerticalAlignment="Top" Width="451"/>
+        <Button x:Name="button" Content="Start counter" HorizontalAlignment="Left" Margin="67,156,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button x:Name="button1" Content="Stop Counter" HorizontalAlignment="Left" Margin="230,156,0,0" VerticalAlignment="Top" Width="266" Click="Button1_Click"/>
+        <Label x:Name="lblpercentage" Content="Label" HorizontalAlignment="Left" Margin="67,112,0,0" VerticalAlignment="Top" Width="536"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="24" Margin="496,22,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

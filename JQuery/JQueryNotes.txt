@@ -1,0 +1,75 @@
+The jQuery library contains the following features:
+    HTML/DOM manipulation
+    CSS manipulation
+    HTML event methods
+    Effects and animations
+    AJAX
+    Utilities
+//===================
+
+With jQuery you select (query) HTML elements and perform "actions" on them.
+jQuery Syntax:
+
+The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+    Basic syntax is: $(selector).action()
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+Document Ready Event :
+    You might have noticed that all jQuery methods in our examples, are inside a document ready event:
+
+        $(document).ready(function(){
+        }
+    This is to prevent any jQuery code from running before the document is finished loading (is ready).
+    It is good practice to wait for the document to be fully loaded and ready before working with it.
+
+The jQuery team has also created an even shorter method for the document ready event:
+    $(function(){
+      // jQuery methods go here...
+    });
+
+//***********IMP POINTS************
+*if you want to call any jQ function on particular element, you need to use $ otherwise 
+    for selecting html properties you just need 'this' like:
+
+        $('p').click(function(){ // to hide paragraph who has been clicked.
+        $(this).hide();
+        });
+
+        $('p.cls1').click(function(){
+            alert(this.innerText); // if you use $(this).innerhtml you will get ''undefined'.
+        });
+
+//-----------
+* $(p).click(); means it will click P. this means programatic click on element.
+
+//******************************************************************************
+$(function () {
+        $('h1').mouseenter(function () { // changing bg color of h1 (by tag)
+            var elem = this;
+            elem.style = "background-color:red;"
+            console.log(elem);
+        });
+        $('h1').mouseleave(function () { //by tag name
+            var elem = this;
+            elem.style = "background-color:blue;"
+            console.log(elem);
+        });
+
+        $('#btn1').mouseenter(function () { //by id (btn1 is id of button)
+            console.log(this);
+            this.style = "background-color:green";
+            this.innerText = "hello";
+        });
+
+        $('.abc').mouseenter(function () { //by Class (.abc is class applied on element)
+            this.style = "background-color:green";
+           //this.class="bcd";
+           
+        });
+    }); //ready function closing.
+
+  //**************************************************
+  
+   

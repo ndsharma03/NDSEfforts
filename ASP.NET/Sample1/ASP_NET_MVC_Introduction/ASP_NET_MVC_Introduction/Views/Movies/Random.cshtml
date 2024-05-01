@@ -1,0 +1,14 @@
+﻿@model ASP_NET_MVC_Introduction.Models.Movie
+@{
+    ViewBag.Title = "View";
+}
+
+<h2 style="color:red">@Model.Name</h2>
+
+<table style=" border:dotted;border-color:lawngreen; border-bottom-width:thick">
+    <tr >
+        <td><span style="padding:5px; margin:5px;">@Model.Id</span></td>
+        <td>@Model.Name</td>
+    </tr>
+</table>
+

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SportsOnline.Models.Product>
+
+<div style="background-color:chocolate; border:3px groove green">
+    <h2 style="display:inline;margin:2px">Name</h2>
+    <h2 style="display:inline;margin:2px">Description</h2>
+</div>
+@{
+    int counter = 0; 
+    string rownum = "row";
+}
+@foreach (var p in Model)
+{
+    rownum = rownum + counter; /*// creating id for div*/
+
+<div id=@rownum  class="normal">
+    <input type="checkbox" id="chkSelect" onclick="SelectRow(this,@counter);" />
+    <h3 style="display:inline;margin:2px"> @p.Name </h3>
+    <h3 style="display:inline;margin:2px">@p.Price.ToString("C")</h3>
+</div>
+    rownum = "row"; /*// reseting rownum to 'row'*/
+    counter++;      /*//incrmenting counter*/
+
+
+}
+<style>
+    .selected{
+        background-color:cornflowerblue;
+        border: 2px unset blue;
+        margin:3px;
+    }
+    .normal{
+    background-color:beige; 
+    margin:1px; 
+    border:1px groove gray;
+    }
+</style>
+<script type="text/javascript">
+
+    function SelectRow(chk,e) {
+        //alert(chk.id +"clicked");
+        let id = "row" + e; //row0, row1, row2 will be generated ids for rows. 
+        let row = document.getElementById(id);
+        console.log(chk.id + "clicked..");
+        if (chk.checked == true) {
+            
+           // console.log(" going to select row : " + row.id);
+            row.setAttribute("class", "selected");
+
+        }
+        else {
+          
+           // console.log(" going to unselect row : " + row.id);
+            row.setAttribute("class", "normal");
+        }
+      
+        
+    }
+
+</script>

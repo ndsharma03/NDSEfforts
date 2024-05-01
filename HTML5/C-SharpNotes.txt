@@ -1,0 +1,3 @@
+Hash Code:
+    A hash code is a value (numeric) used to identify an object during equality testing. It also serves as an index for an object in a coll
+    The GetHashCode method provides the has code of an object. The default implementation of hashCode() provided by Object is derived by mapping the memory address to an integer value.

@@ -1,0 +1,292 @@
+<HTML>
+<HEAD>
+<Script language="Javascript">
+
+function FuncStringTest()
+{
+
+		var s1="It's six o'clock.";
+		var s2='Remember to say "please" and "thank you."';
+		var s3="Remember to say \"please\" and \"thank you.\"";
+		var strLenght="caterpillar".length;
+		var strToLower="THE KIDS".toLowerCase();
+		var strTrim="   but keep the middle spaces   ".trim();
+		alert(s1);
+		alert(s2);
+		alert(s3);
+		alert(strLenght);
+		alert(strToLower);
+		alert(strTrim);
+}
+
+function FuncBooleanTest(){
+/*
+Booleans are values that can be only one of two things: true or false.
+Anything ?n?or ?ff,??es?or ?o,?or temporary is a usually good fit for a boolean. It? useful to store booleans in variables to keep track of their values and change them over time.
+
+*/
+var boolTrue=true;
+boolTrue=false;
+alert(boolTrue);
+
+}
+
+function FuncVariableTest()
+{
+/*
+Naming variables
+----------------
+
+Variable names are pretty flexible as long as you follow a few rules:
+Start them with a letter, underscore _, or dollar sign $.
+After the first letter, you can use numbers, as well as letters, underscores, or dollar signs.
+Don�t use any of JavaScript�s reserved keywords.
+Variable names are case-sensitive, so myVar, MyVar, and myvar are all different variables
+*/
+
+var x="Test"; //variable type string
+	x=100;    //variable converted to int.
+	x=x+100;  //result will be 200
+
+var y=100;   // interger variable declared.
+y=y+"Str"; 	 //it will treat variable as string.
+
+alert (y);   //result will be string concatenation.
+alert(x);    //
+
+}
+
+function FuncIfElseTest(){
+
+if (false) {
+      var outcome = "if block";
+} 
+else if (true) {
+      var outcome = "first else if block";
+} 
+else if (true) {
+      var outcome = "second else if block";
+} 
+else {
+      var outcome = "else block";
+}
+alert(outcome);
+}
+
+function FuncOperatorTest()
+{
+//The standard equality operators (== and !=) use the Abstract Equality Comparison Algorithm to compare two operands. If the operands are of different types, it will attempt to convert them to the same type before making the comparison, e.g., in the expression 5 == '5', the string on the right is converted to Number before the comparison is made.
+//The strict equality operators (=== and !==) use the Strict Equality Comparison Algorithm and are intended for performing equality comparisons on operands of the same type. If the operands are of different types, the result is always false so 5 !== '5'.
+
+//When type conversion is involved in the comparison (i.e., non�strict comparison), JavaScript converts the types String, Number, Boolean, or Object operands as follows:
+//When comparing a number and a string, the string is converted to a number value. JavaScript attempts to convert the string numeric literal to a Number type value. First, a mathematical value is derived from the string numeric literal. Next, this value is rounded to nearest Number type value.
+//If one of the operands is Boolean, the Boolean operand is converted to 1 if it is true and +0 if it is false.
+//If an object is compared with a number or string, JavaScript attempts to return the default value for the object. Operators attempt to convert the object to a primitive value, a String or Number value, using the valueOf and toString methods of the objects. If this attempt to convert the object fails, a runtime error is generated.
+//Note that an object is converted into a primitive if, and only if, its comparand is a primitive. If both operands are objects, they're compared as objects, and the equality test is true only if both refer the same object.
+
+//The equality operator converts the operands if they are not of the same type, then applies strict comparison. If both operands are objects, then JavaScript compares internal references which are equal when operands refer to the same object in memory.
+//*************************************************************************************************************************************************
+
+// true as both operands are type String (i.e. string primitives):
+alert ("Hello");
+
+var result;
+
+result='foo' === 'foo';
+alert("'foo' === 'foo' :" +result );
+
+var a = new String('foo');
+var b = new String('foo');
+
+// false as a and b are type Object and reference different objects
+result=a == b ;
+alert("a == b  :" + result);
+
+// false as a and b are type Object and reference different objects
+result=a === b ;
+alert("a === b  : " +result );
+
+// true as a and 'foo' are of different type and, the Object (a) 
+// is converted to String 'foo' before comparison
+result=a == 'foo';
+alert( "a == 'foo'  : "+ result);
+
+var x=true; //boolean variable
+result=x==1;
+alert ( "x==1 : "+result); //boolean value will be converted to 1 and then comparision happens.
+
+result=1.9+1;
+alert(result);
+
+var x1=new Object(10);
+var x2=new Object(10);
+result=x1==x2;
+alert(result);
+
+result=x1===x2;
+alert(result);
+
+alert("Value of x1= "+x1.toString());
+alert("Value of x2= "+x2.toString());
+
+result=x1.toString()==x2.toString();
+alert("Value of x1==x2 " + result);
+
+
+//%%%%%%%%%%% InEquality %%%%%%%%%%%%%%
+//1 !=   2     // true
+//1 !=  '1'    // false (firstly JS will convert string type to interger type and then compares so, answer is false as 1=1 is true.
+//1 !=  "1"    // false
+//1 !=  true   // false
+//0 !=  false  // false
+
+//%%%%%%%%%%% Identity / strict equality (===) %%%%%%%%%%%%%%
+// 3 === 3   // true
+// 3 === '3' // false
+// var object1 = {'key': 'value'}, object2 = {'key': 'value'};
+// object1 === object2 //false
+
+
+}
+function parseProtocol(url) { 
+  var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+  if (!parsedURL) {
+    return false;
+  }
+  console.log(parsedURL); // ["https://developer.mozilla.org/en-US/Web/JavaScript", "https", "developer.mozilla.org", "en-US/Web/JavaScript"]
+
+  var [, protocol, fullhost, fullpath] = parsedURL;
+
+  
+  return protocol;
+}
+
+function ParseProtocolTest(){
+
+	alert(parseProtocol('https://developer.mozilla.org/en-US/Web/JavaScript')); // "https"
+}
+
+
+function DestructuringAssignmentTest()
+{
+	//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+	//The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+var a, b, rest;
+
+[a, b] = [10, 20];
+alert(a); // 10
+alert(b); // 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+alert(a); // 10
+alert(b); // 20
+alert(rest); // [30, 40, 50]
+
+({ a, b } = { a: 10, b: 20 });
+alert(a); // 10
+alert(b); // 20
+
+
+// Stage 4(finished) proposal
+/*
+({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
+
+alert(a); // 10
+alert(b); // 20
+alert(rest); // {c: 30, d: 40}
+*/
+}
+
+
+//
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+// Source of below function is above url;
+//Nested object and array destructuring
+function NestedObjectAndArrayDestructingTest(){
+	//alert("InSide");
+	const metadata = {
+		title: 'Scratchpad',
+		translations: [
+		  {
+			locale: 'de',
+			localization_tags: [],
+			last_edit: '2014-04-14T08:43:37',
+			url: '/de/docs/Tools/Scratchpad',
+			title: 'JavaScript-Umgebung'
+		  }
+		],
+		url: '/en-US/docs/Tools/Scratchpad'
+	  };
+	 
+	  let {
+		title: englishTitle, // rename
+		translations: [
+		  {
+			 title: localeTitle, // rename
+		  },
+		],
+	  } = metadata;
+	 
+	  alert(englishTitle); // "Scratchpad"
+	  alert(localeTitle);  // "JavaScript-Umgebung"
+	  
+}
+
+//Unpacking fields from objects passed as function parameter
+function UnPackFieldsFromObjectsTest(){
+
+	function userId({id}) {
+  			return id;
+		}
+
+		function whois({displayName, fullName: {firstName: name}}) {
+		alert(displayName + ' is ' + name);
+		}
+
+		var user = { 
+		id: 42, 
+		displayName: 'jdoe',
+		fullName: { 
+			firstName: 'John',
+			lastName: 'Doe'
+		}
+		};
+
+		alert('userId: ' + userId(user)); // "userId: 42"
+		whois(user); // "jdoe is John"
+		alert(user);
+}
+
+function RandomTest(){
+	var a,b,rest;
+	[a, b,...rest] = [10, 20, 30, 40];
+	
+
+alert(a); // 10
+alert(b); // 20
+alert(rest);
+alert(typeof(rest));
+alert(rest[0]);
+}
+</Script>
+</HEAD>
+
+
+<BODY>
+
+<H1>Java Script variables </H1>
+
+<input type="Submit" Value="String Methods Test" onClick="FuncStringTest()" />  <br/><br/>
+<input type="Submit" Value="Boolean Test" onClick="FuncBooleanTest()" />		<br/><br/>
+<input type="Submit" Value='Variables in JS' onClick="FuncVariableTest()"/>		<br/><br/>
+<input type="Submit" Value='If-Else in JS' onClick="FuncIfElseTest()"/>			<br/><br/>
+<input type="Submit" Value='Operators in JS' onClick="FuncOperatorTest()"/>		<br/><br/>
+<input type="Submit" Value='ParseProtocolTest' onClick="ParseProtocolTest()"/>		<br/><br/>
+<input type="Submit" Value='DestructuringAssignmentTest' onClick="DestructuringAssignmentTest()"/>		<br/><br/>
+
+<input type="Submit" Value='NestedObjectAndArrayDestructing' onClick="NestedObjectAndArrayDestructingTest()"/>		<br/><br/>
+<input type="Submit" Value='UnPackFieldsFromObjects' onClick="UnPackFieldsFromObjectsTest()"/>		<br/><br/>
+<input type="Submit" Value='RandomTest' onClick="RandomTest()"/>		<br/><br/>
+</BODY>
+</HTML>

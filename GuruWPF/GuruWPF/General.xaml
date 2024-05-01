@@ -1,0 +1,23 @@
+﻿<Window x:Class="GuruWPF.General"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="General" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="x:Static Test" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label x:Name="label_Copy" Content="{Binding Source={x:Static local:StaticMarkupTest.Name}}" HorizontalAlignment="Left" Margin="231,83,0,0" VerticalAlignment="Top" Width="451"/>
+        <Control Name="control" Control.MouseDoubleClick="Control_MouseDoubleClick" Margin="10,100" Width="150" Height="30" Background="Chocolate">
+            <Control.Template>
+                <ControlTemplate>
+                    <TextBlock Text="Using Base Class Control directly" Background="{TemplateBinding Background}"></TextBlock>
+                </ControlTemplate>
+            </Control.Template>
+
+        </Control>
+
+        <Button Name="btnEventTester" Height="30" Content="Event Handler in Different way" Margin="321,254,219,135" />
+    </Grid>
+</Window>

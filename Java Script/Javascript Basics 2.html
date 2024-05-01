@@ -1,0 +1,56 @@
+﻿<HTML>
+<HEAD>
+<Script language="Javascript">
+//Arrays are container-like values that can hold other values. The values inside an array are called elements.
+//Array elements don’t all have to be the same type of value. Elements can be any kind of JavaScript value — even other arrays.
+function FuncArrayTest()
+{
+
+	alert ("Hello");
+	var breakfast = ["coffee", "croissant"];
+	var breakfast2 = ["Tea", "Samosa"];
+	alert(breakfast +","+breakfast2);
+	alert ("breakfast.Lenght = "+breakfast.length);
+	var arr2 = [100, "paint", [200, "brush"], false]; // array can contains any type of values even another array.
+	alert(arr2);
+	alert ("arr2.Lenght = "+arr2.length);
+	alert (" Test.Lenght ="+"Test".length); //printing lenght of string "test".
+	
+	//concat
+	//An array’s concat method returns a new array that combines the values of two arrays.
+	var arrInt=[1,2,3,4];
+	var arrStr=["one", "Two","Three","Four"];
+	var arrCombined=arrInt.concat(arrStr);
+	alert(arrCombined);
+	
+	//pop
+	//An array’s pop method removes the last element in the array and returns that element’s value.
+	var arr3=["First","Second","Third"];
+	alert(arr3.length);
+	alert("arr3.pop()= " + arr3.pop()); // pop will remove last element from array.
+	alert(arr3.length);
+	
+	//push
+	//An array’s push method adds an element to the array and returns the array’s length.
+	var arr4=[1,2,3];
+	arr4.push(5);
+	
+}
+
+
+
+</Script>
+
+
+</HEAD>
+
+
+<BODY>
+
+<H1>Java Script Basics </H1>
+
+<input type="Submit" Value="Array Test" onClick="FuncArrayTest()" />  <br/>
+
+
+</BODY>
+</HTML>

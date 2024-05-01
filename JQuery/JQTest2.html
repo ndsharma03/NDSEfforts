@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JQuery Show,Hide,Fade,Slide,animation</title>
+    </head>
+    <Body>
+        <div>
+            <div style="background-color:rgb(30, 58, 68); height:30px;">
+            <Button id=btnShow>Show Image</Button>
+            <Button id=btnToggle>Toggle</Button>
+            <Button id=btnFadeIn>Fade In-out</Button>
+            <Button id=btnFadeOut>Fade Out</Button>
+            </div>
+            <div id="divImg" style="background-color:beige;">
+            <image id="img1" src="Images\IMG1.jpg" width="300" height="300"></image>
+            </div>
+            <div id="divImg2"  style="background-color: lightblue; display: none;">
+                <image src="Images\leaf1.png" width="300" height="300"></image>
+                </div>
+        </div>
+        <script src="temp/Scripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                console.log($("#btnShow")[0].innerText);
+                
+                var counter=1;
+                // $('#btnShow').click(function(){
+                //     $('#divImg').hide(1000,function(){ $('#divImg2').show(1000);});
+                   
+                //     //$('#divImg2').show(1000);
+                // });
+
+                $('#btnShow').click(function(){
+                    $('#divImg').hide(1000,function(){ 
+                        ++counter;
+                        let imgsrc='Images/Img'+counter+'.jpg';
+                        // console.log(imgsrc);
+                        // console.log($('#img1')[0].src);
+                        $('#img1')[0].src=imgsrc;
+                        $('#divImg').show(1000);});
+                   
+                    
+                });
+            
+
+                $('#btnToggle').click(function(){
+                    $('#divImg').toggle(1000);
+                    $('#divImg2').toggle(1000);
+                });
+
+
+                //********Fade In Fade Out Fade Toggle*************
+                $('#btnFadeIn').click(function(){
+                        $("#divImg").fadeOut(1000, function(){ $(this).fadeIn(1000);});
+                });
+                $('#btnFadeOut').click(function(){
+                        $("#divImg").fadeOut(1000);
+                });
+
+            });
+        </script>
+    </Body>
+</html>

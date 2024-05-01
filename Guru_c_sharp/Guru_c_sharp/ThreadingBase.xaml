@@ -1,0 +1,14 @@
+﻿<Window x:Class="Guru_c_sharp.ThreadingBase"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ThreadingBase" Height="600" Width="600">
+    <Grid>
+        <Button x:Name="btnLongRunningTask" Content="Long Running Task" HorizontalAlignment="Left" Margin="282,114,0,0" VerticalAlignment="Top" Width="177" Click="btnLongRunningTask_Click"/>
+        <Label Content="Thread input" HorizontalAlignment="Left" Margin="41,49,0,0" VerticalAlignment="Top" Width="204"/>
+        <TextBox x:Name="TxtInput" HorizontalAlignment="Left" Height="23" Margin="282,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Thread Result" HorizontalAlignment="Left" Margin="41,173,0,0" VerticalAlignment="Top" Width="204"/>
+        <Label x:Name="lblResult" Content="" HorizontalAlignment="Left" Margin="283,173,0,0" VerticalAlignment="Top" Width="204" Background="Beige"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="475,114,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

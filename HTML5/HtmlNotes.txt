@@ -1,0 +1,285 @@
+
+// Must read articles
+// http://tramaine.me/blog/use-typeof-to-check-javascript-data-types-at-runtime
+//
+//
+
+
+The start tag is also called the opening tag, and the end tag the closing tag.
+Only the content inside the <body> section (the white area above) is displayed in a browser.
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+Attributes are used to provide additional information about HTML elements.
+Anchor element:
+<a href="https://www.w3schools.com">This is a link</a>
+
+HTML Elements:
+    HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <br> element (which indicates a line break).
+    HTML elements can be nested (elements can contain elements).
+    All HTML documents consist of nested HTML elements.
+
+Empty HTML Elements:
+    HTML elements with no content are called empty elements.
+    <br> is an empty element without a closing tag (the <br> tag defines a line break)
+
+HTML Is Not Case Sensitive.
+
+HTML Attributes:
+    All HTML elements can have attributes
+    Attributes provide additional information about an element
+    Attributes are always specified in the start tag
+    Attributes usually come in name/value pairs like: name="value"
+
+Title=Tooltip:
+    a title attribute is added to the <p> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph.
+
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+<h1 style="font-size:60px;">Heading 1</h1>
+
+The HTML <head> element is a container for metadata.Metadata typically define the document title, character set, styles, scripts, and other meta information.
+
+HTML Block and Inline Elements:
+    Every HTML element has a default display value depending on what type of element it is.
+    The two display values are: block and inline.
+
+Block-level Elements:
+    A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+    Block level elements in HTML:
+
+        <address>   <article>   <aside> <blockquote>    <canvas>    <dd>    <div>   
+        <dl>    <dt>    <fieldset>  <figcaption>    <figure>    <footer>    <form>  
+        <h1>-<h6>   <header>    <hr>    <li>    <main>  <nav>   <noscript>  <ol>    <p>
+        <pre>   <section>   <table> <tfoot> <ul>    <video>
+
+Inline Elements:
+    An inline element does not start on a new line and only takes up as much width as necessary.
+    <a> <abbr>  <acronym>   <b> <bdo>   <big>   <br>    <button>
+    <cite>  <code>  <dfn>   <em>    <i> <img>   <input> <kbd>
+    <label> <map>   <object>    <output>    <q> <samp>  <script>
+    <select>    <small> <span>    <strong>  <sub>
+    <sup>   <textarea>  <time>  <tt>    <var>
+
+Viewport:
+    The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+Image:
+    HTML images are defined with the <img> tag.
+    The source file (src), alternative text (alt), width, and height are provided as attributes:
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+HTML Buttons:
+    <button>Click me</button>
+
+HTML Lists:
+    HTML lists are defined with the <ul> (unordered/bullet list) or the <ol> (ordered/numbered list) tag, followed by <li> tags (list items):
+    <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ul>
+
+    <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+    </ol>
+
+
+The HTML <pre> Element :
+    The HTML <pre> element defines preformatted text.
+    The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+HTML Formatting Elements:
+    Formatting elements were designed to display special types of text:
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Small text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+
+  HTML Quotation and Citation Elements:
+
+    <abbr> -	    Defines an abbreviation or acronym
+    <address> -	    Defines contact information for the author/owner of a document
+    <bdo> -	        Defines the text direction
+    <blockquote> -	Defines a section that is quoted from another source
+    <cite> -	    Defines the title of a work
+    <q>	 -          Defines a short inline quotation 
+
+CSS:
+
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+    CSS can be added to HTML elements in 3 ways:
+    Inline - by using the style attribute in HTML elements
+    Internal - by using a <style> element in the <head> section
+    External - by using an external CSS file.
+
+CSS Summary:
+
+    Use the HTML style attribute for inline styling
+    Use the HTML <style> element to define internal CSS
+    Use the HTML <link> element to refer to an external CSS file
+    Use the HTML <head> element to store <style> and <link> elements
+    Use the CSS color property for text colors
+    Use the CSS font-family property for text fonts
+    Use the CSS font-size property for text sizes
+    Use the CSS border property for borders
+    Use the CSS padding property for space inside the border
+    Use the CSS margin property for space outside the border
+
+HTML link:
+    Use the <a> element to define a link
+    Use the href attribute to define the link address
+    Use the target attribute to define where to open the linked document
+    Use the <img> element (inside <a>) to use an image as a link
+    Use the id attribute (id="value") to define bookmarks in a page
+    Use the href attribute (href="#value") to link to the bookmark
+
+The target attribute specifies where to open the linked document:
+
+    The target attribute can have one of the following values:
+        _blank - Opens the linked document in a new window or tab
+        _self - Opens the linked document in the same window/tab as it was clicked (this is default)
+        _parent - Opens the linked document in the parent frame
+        _top - Opens the linked document in the full body of the window
+        framename - Opens the linked document in a named frame
+
+To visit specific part of page(bookmark), give id to perticular element where you want to visit and 
+then set that id in href of link like:
+  <a href="#p1">jump to para 1</a>  
+ you can also visit to next page at specific paragraph(location) by using (page name + #id ) like:
+ <a href="BookMark.html#p4"> jump to bookmark page, paragraph 4</a>
+
+HTML Image:
+    Use the HTML <img> element to define an image
+    Use the HTML src attribute to define the URL of the image
+    Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+    Use the HTML width and height attributes to define the size of the image
+    Use the CSS width and height properties to define the size of the image (alternatively)
+    Use the CSS float property to let the image float
+    Use the HTML <map> element to define an image-map
+    Use the HTML <area> element to define the clickable areas in the image-map
+    Use the HTML <img>'s element usemap attribute to point to an image-map
+    Use the HTML <picture> element to show different images for different devices
+
+    <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+    <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+    second way (style) to set width and height is better as it prevents style sheets to change the width and
+    height of image from external stylesheet.
+
+    Use the CSS float property to let the image float to the right or to the left of a text:
+    <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+
+Image Maps:
+    The <map> tag defines an image-map. An image-map is an image with clickable areas.
+    
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
+
+HTML <picture> Element :
+    The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.
+    <picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+    </picture>
+
+HTML LIST:
+    Use the HTML <ul> element to define an unordered list
+    Use the CSS list-style-type property to define the list item marker
+    Use the HTML <ol> element to define an ordered list
+    Use the HTML type attribute to define the numbering type
+    Use the HTML <li> element to define a list item
+    Use the HTML <dl> element to define a description list
+    Use the HTML <dt> element to define the description term
+    Use the HTML <dd> element to describe the term in a description list
+    Lists can be nested inside lists
+    List items can contain other HTML elements
+    Use the CSS property float:left or display:inline to display a list horizontally
+
+HTML Iframes:
+    An iframe is used to display a web page within a web page.
+    <iframe src="URL"></iframe>
+
+Iframe - Target for a Link
+    The target attribute of the link must refer to the name attribute of the iframe:
+    <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+The HTML <noscript> Tag
+    The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts.
+
+HTML File Paths:
+    <img src="picture.jpg">	        picture.jpg is located in the same folder as the current page
+    <img src="images/picture.jpg">	picture.jpg is located in the images folder in the current folder
+    <img src="/images/picture.jpg">	picture.jpg is located in the images folder at the root of the current web
+    <img src="../picture.jpg">	    picture.jpg is located in the folder one level up from the current folder
+
+HTML Meta:
+    Meta tag is used to provide metadata about the page.it's added inside of head tag.
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta http-equiv="refresh" content="30"> /*refresh document every 30 sec.*/
+
+Some common tags:
+    <head>	    Defines information about the document
+    <title>	    Defines the title of a document
+    <base>	    Defines a default address or a default target for all links on a page
+    <link>	    Defines the relationship between a document and an external resource
+    <meta>	    Defines metadata about an HTML document
+    <script>	Defines a client-side script
+    <style>	    Defines style information for a document
+
+/*=======================================================================================*/
+What is Responsive Web Design?
+    Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge,
+    a website, to make it look good on all devices (desktops, tablets, and phones):
+
+Responsive Images:Responsive images are images that scale nicely to fit any browser size.
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+Responsive Text Size:he text size can be set with a "vw" unit, which means the "viewport width"    
+    <h1 style="font-size:10vw">Hello World</h1>
+
+Media Queries:
+    With media queries you can define completely different styles for different browser sizes.
+/*==========================================================================================*/
+
+The <form> Element:
+
+    The HTML <form> element defines a form that is used to collect user input.
+    Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+
+    The action attribute defines the action to be performed when the form is submitted.
+    <form action="/action_page.php">
+
+    The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+    <form action="/action_page.php" method="get"> 
+
+    Each input field must have a name attribute to be submitted.
+    If the name attribute is omitted, the data of that input field will not be sent at all.
+
+    accept-charset	    Specifies the charset used in the submitted form (default: the page charset).
+    action	            Specifies an address (url) where to submit the form (default: the submitting page).
+    autocomplete	    Specifies if the browser should autocomplete the form (default: on).
+    enctype	            Specifies the encoding of the submitted data (default: is url-encoded).
+    method	            Specifies the HTTP method used when submitting the form (default: GET).
+    name	            Specifies a name used to identify the form (for DOM usage: document.forms.name).
+    novalidate	        Specifies that the browser should not validate the form.
+    target	            Specifies the target of the address in the action attribute (default: _self).
+
+    

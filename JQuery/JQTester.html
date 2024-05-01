@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style rel="stylesheet" type="text/css">
+        .abc {
+            background-color: aquamarine;
+        }
+        .bcd {
+            background-color:burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>shri ram!!</h1>
+    <button id="btn1">click me</button>
+    <input type="text" class="abc">
+<p>Paragraph 1  </p>
+<p>Paragraph 2  </p>
+<p class="cls1">Paragraph 3  </p>
+<p>Paragraph 4  </p>
+
+
+
+<script src="temp/Scripts/jquery.js"></script>
+<script type="text/javascript"> //multiple script tag.
+$(document).ready(function(){
+    // $('p').click(function(){ // hide all 'p'
+    //     $('p').hide(2000);
+    // });
+    //or 
+   
+    // $('p').click(function(){ // to hide paragraph who has been clicked.
+    //    $(this).hide();
+    // });
+   
+    // $('p.cls1').click(function(){
+    //     alert(this.innerText);
+    // });
+
+});
+</script>
+<script type="text/javascript">
+
+    // selected by tag name:
+
+    $(function () {
+        $('h1').mouseenter(function () {
+            var elem = this;
+            elem.style = "background-color:red;"
+            console.log(elem);
+        });
+        $('h1').mouseleave(function () { //by tag name
+            var elem = this;
+            elem.style = "background-color:blue;"
+            console.log(elem);
+        });
+
+        $('#btn1').mouseenter(function () { //by id
+            console.log(this);
+            this.style = "background-color:green";
+            this.innerText = "hello";
+        });
+
+        $('.abc').mouseenter(function () { //by Class
+            this.style = "background-color:green";
+           //this.class="bcd";
+           
+        });
+    }); //ready function closing.
+
+</script>
+</body>
+</html>

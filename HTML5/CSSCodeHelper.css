@@ -1,0 +1,165 @@
+
+/* // css for link */
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*end of link css*/
+/*=========================================*/
+/* Display link as a button */
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+  /*end Dispaly link as a button*/
+  /* background image */
+  body {
+    background-image: url('img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  /* end background image */
+
+  /* HTML TABLE */
+  /*HTML Table - Adding a Border*/
+
+  table, th, td {
+    border: 1px solid black;
+  }
+  /*HTML Table - Collapsed Borders*/
+  /*If you want the borders to collapse into one border, add the CSS border-collapse property*/
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  /*HTML Table - Adding Cell Padding*/
+  th, td {
+    padding: 15px;
+  }
+
+  /*HTML Table - Left-align Headings*/
+  th {
+    text-align: left;
+  }
+  /*HTML Table - Adding Border Spacing*/
+  table {
+    border-spacing: 5px;
+  }
+
+  /*HTML Table - Cells that Span Many Columns*/
+  table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+/*HTML Table - Adding a Caption*/
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+/*Table alternate row style*/
+/*==========================*/
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  table#t01 th {
+    color: white;
+    background-color: black;
+  }
+/****************************/
+
+/*Horizontal List with CSS*/
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>/

@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1,
+    "EntityName": "Category",
+    "Name": "Technology",
+    "Parent": 0
+  },
+  {
+    "Id": 2,
+    "EntityName": "Category",
+    "Name": "C#",
+    "Parent": 1
+  },
+  {
+    "Id": 3,
+    "EntityName": "Category",
+    "Name": "Thereading",
+    "Parent": 2
+  },
+  {
+    "Id": 4,
+    "EntityName": "Category",
+    "Name": "Task-Async-Await",
+    "Parent": 2
+  },
+  {
+    "Id": 5,
+    "EntityName": "Category",
+    "Name": "Exception",
+    "Parent": 2
+  },
+  {
+    "Id": 6,
+    "EntityName": "Category",
+    "Name": "OOPS",
+    "Parent": 2
+  },
+  {
+    "Id": 7,
+    "EntityName": "Category",
+    "Name": "Memory Management",
+    "Parent": 2
+  },
+  {
+    "Id": 8,
+    "EntityName": "Category",
+    "Name": "SQL Server",
+    "Parent": 1
+  },
+  {
+    "Id": 9,
+    "EntityName": "Category",
+    "Name": "WCF",
+    "Parent": 1
+  },
+  {
+    "Id": 10,
+    "EntityName": "Category",
+    "Name": "WPF",
+    "Parent": 1
+  },
+  {
+    "Id": 11,
+    "EntityName": "Category",
+    "Name": "JAVA SCRIPT",
+    "Parent": 1
+  },
+  {
+    "Id": 12,
+    "EntityName": "Category",
+    "Name": "WEB API",
+    "Parent": 1
+  },
+  {
+    "Id": 13,
+    "EntityName": "Category",
+    "Name": "Angular JS",
+    "Parent": 1
+  },
+  {
+    "Id": 14,
+    "EntityName": "Category",
+    "Name": "ASP.NET MVC",
+    "Parent": 1
+  },
+  {
+    "Id": 15,
+    "EntityName": "Category",
+    "Name": "ASP.NET MVC CORE",
+    "Parent": 1
+  },
+  {
+    "Id": 16,
+    "EntityName": "Category",
+    "Name": "HTML",
+    "Parent": 1
+  },
+  {
+    "Id": 17,
+    "EntityName": "Category",
+    "Name": "CSS",
+    "Parent": 1
+  },
+  {
+    "Id": 18,
+    "EntityName": "Category",
+    "Name": "Domain",
+    "Parent": 0
+  }
+]

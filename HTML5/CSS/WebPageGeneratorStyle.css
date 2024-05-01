@@ -1,0 +1,58 @@
+body{
+
+    background: rgb(207, 206, 255);;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px groove blue;
+
+}
+
+Label{
+    font:normal 14px verdana; /*setting all font properties in oneline*/
+    color: black; 
+ }
+
+ ul
+ {
+    font-style: italic;
+    color:black;
+    list-style: circle; /*will reomove bullet from list items*/
+}
+
+li
+ {
+    margin-bottom: 5px;
+}
+
+.divWithBorder{
+    border: 2px solid darkgrey;
+    margin: 8px;
+    padding: 5px;
+    font: 14px  Verdana italic;
+}
+
+.divWithoutBorder{
+    border: 1px solid darkgrey;
+    margin: 8px;
+    padding: 5px;
+}
+.PageHeader {
+    
+    font: 16px 'Times New Roman', Times, serif  italic;
+   background: rgb(40, 152, 243);
+    color:black;
+    padding: 5px;
+    margin: 5px;
+    height: 130px;
+    border: 5px groove rgb(19, 86, 88) ;
+    
+}
+.PageHeader a {
+    margin-bottom: 1px;
+    margin-left: 2px;
+    padding-top: 30px;
+    display: block;
+    color: aliceblue;
+    
+    
+  
+}

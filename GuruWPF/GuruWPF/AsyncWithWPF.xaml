@@ -1,0 +1,16 @@
+﻿<Window x:Class="GuruWPF.AsyncWithWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="AsyncWithWPF" Height="450" Width="800">
+    <Grid>
+        <Button  Name="btnAsyncReturnVoid1" Height="30" Width="100" Content="AsyncReturnVoid1" Margin="43,174,649,215" Click="BtnAsyncReturnVoid1_Click" />
+        <Button  Name="btnAsyncReturnVoid2" Height="30" Width="100" Content="AsyncReturnVoid2" Margin="183,174,509,215" Click="BtnAsyncReturnVoid2_Click" />
+        <Button  Name="btnAsyncReturn1" Height="30" Content="AsyncReturnTask-T" Margin="325,174,355,215" Click="BtnAsyncReturn1_Click" />
+        <Button  Name="btnTestResponsiveness" Height="30" Content="Test Responsiveness" Margin="460,174,152,215" Click="BtnTestResponsiveness_Click" />
+        <Label x:Name="lblResult" Content="Label" HorizontalAlignment="Left" Margin="43,63,0,0" VerticalAlignment="Top" Width="695" Height="73"/>
+    </Grid>
+</Window>

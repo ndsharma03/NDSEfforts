@@ -1,0 +1,33 @@
+﻿<Window x:Class="QuickReview.View.StudentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickReview.View"
+        mc:Ignorable="d" 
+        xmlns:vm="clr-namespace:QuickReview.ViewModel"
+        Title="StudentView" Height="450" Width="800">
+    <Window.Resources>
+        <vm:StudentViewModel x:Key="vmStudent"></vm:StudentViewModel>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+   
+    <Label Grid.Row="0" Grid.Column="0" Name="lblName" Content="Name" Height="30" ></Label>
+        <Label Grid.Row="1" Grid.Column="0" Name="lblAge" Content="Age" Height="30"></Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtName" Text="{Binding Source={StaticResource vmStudent}, Path=StudentName}" Height="30" ></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="txtAge" Text="{Binding Source={StaticResource vmStudent}, Path=StudentAge}" Height="30"></TextBox>
+        <Button  Grid.Row="2" Grid.Column="1" Name="btnAdd" Content="Add" Command="{Binding Source={StaticResource vmStudent}, Path=AddStudentCmd}" Height="30" Width="80"></Button>
+        <Button  Grid.Row="2" Grid.Column="0" Name="btnView" Content="View Selected" Command="{Binding Source={StaticResource vmStudent}, Path=ViewStudentCmd}" Height="30" Width="80"></Button>
+        <DataGrid Grid.Row="3" Grid.ColumnSpan="2" Name="grdStudents" SelectedItem="{Binding Source={StaticResource vmStudent}, Path=SelectedStudent}" AutoGenerateColumns="True" ItemsSource="{Binding Source={StaticResource vmStudent}, Path=Students}" ></DataGrid>
+    </Grid>
+</Window>

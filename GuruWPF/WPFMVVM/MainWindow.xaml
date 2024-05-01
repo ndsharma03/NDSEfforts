@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPFMVVM.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFMVVM"
+        mc:Ignorable="d"  Name="MainWindow1"
+        Title="MainWindow" >
+    <Window.Resources>
+        <Style TargetType="local:MainWindow">
+            <Setter Property="Count" Value="50"></Setter>
+        </Style>
+        <Style TargetType="Label" x:Key="headerText">
+            <Setter Property="FontFamily" Value="Verdana"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="Foreground" Value="DarkOrange"></Setter>
+            <Setter Property="FontStyle" Value="Italic"></Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel Background="Black" Margin="5,5,5,0">
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Top">
+            <Label Content="{Binding ElementName=MainWindow1,Path=Count }" Foreground="DarkTurquoise"></Label>
+            <StackPanel Orientation="Horizontal" Background="DarkGoldenrod">
+                <Button Content="My Notes" Width="Auto" Background="Transparent" Click="Button_Click"></Button>
+                <Button Content="My Categories" Width="Auto" Background="Transparent"></Button>
+                <Button Content="Search" Width="Auto" Background="Transparent"></Button>
+                
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Left"  FlowDirection="LeftToRight" HorizontalAlignment="Left"></StackPanel>
+      
+        <Expander   ExpandDirection="Down" FlowDirection="LeftToRight" >
+            <StackPanel Width="Auto" Orientation="Vertical" Background="Black" HorizontalAlignment="Left">
+                <Label Content="Choose Category.." Foreground="DarkTurquoise"></Label>
+                <TreeView HorizontalAlignment="Left" Foreground="DarkTurquoise" Background="Black">
+                <TreeViewItem >
+                    <TextBlock Text="Technology"></TextBlock>
+                </TreeViewItem>
+                <TreeViewItem >
+                    <TextBlock Text="Technology"></TextBlock>
+                </TreeViewItem>
+                <TreeViewItem >
+                    <TextBlock Text="Technology"></TextBlock>
+                </TreeViewItem>
+                <TreeViewItem >
+                    <TextBlock Text="Technology"></TextBlock>
+                </TreeViewItem>
+            </TreeView>
+            
+        </StackPanel>
+        </Expander>
+        <RichTextBox DockPanel.Dock="Left" Width="Auto"></RichTextBox>
+    </DockPanel>
+    
+</Window>

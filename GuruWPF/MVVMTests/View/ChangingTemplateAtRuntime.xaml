@@ -1,0 +1,39 @@
+﻿<Window x:Class="MVVMTests.View.ChangingTemplateAtRuntime"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMTests.View"
+        mc:Ignorable="d"
+        Title="ChangingTemplateAtRuntime" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate TargetType="{x:Type TextBox}" x:Key="viewTemplate">
+            <Grid>
+                <Ellipse Fill="GreenYellow" Stretch="Fill" Stroke="Red"></Ellipse>
+            <ContentPresenter Content="{TemplateBinding Text}"></ContentPresenter>
+            </Grid>
+        </ControlTemplate>
+        <ControlTemplate TargetType="{x:Type TextBox}" x:Key="editTemplate">
+            <TextBox Background="LightBlue" Text="{TemplateBinding Text}"></TextBox>
+        </ControlTemplate>
+        <Style TargetType="{x:Type TextBox}" x:Key="textStyle">
+            <Setter Property="FontSize" Value="22"></Setter>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=radioButton, Path=IsChecked}" Value="True">
+                    <Setter Property="Template" Value="{StaticResource viewTemplate}"></Setter>
+                    
+                 </DataTrigger>
+                <DataTrigger Binding="{Binding ElementName=radioButton1, Path=IsChecked}" Value="True">
+                    <Setter Property="Template" Value="{StaticResource editTemplate}"></Setter>
+
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+    </Window.Resources>
+    <StackPanel>
+        <RadioButton x:Name="radioButton" GroupName="A" Command="" Content="View" HorizontalAlignment="Left" Margin="127,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton1" GroupName="A" Content="Edit" HorizontalAlignment="Left" Margin="277,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txt1" Text="Shri Ganesh"  Width="100" Height="30" Style="{StaticResource  textStyle}"/>
+    </StackPanel>
+</Window>

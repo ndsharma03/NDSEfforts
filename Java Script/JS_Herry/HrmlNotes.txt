@@ -1,0 +1,17 @@
+// HTML Notes:
+//===docuemnt===
+
+document.all
+document.body
+document.form 
+above statements will show dom tree as per given class name(all,body,form,etc.).
+
+window is a global object; document object is a part of window object.
+some important function of window objects are :
+    console.log(window.scrollX); // will give you scroll position in X axis.
+    console.log(window.scrollY);// will give you scroll position in Y axis.
+    console.log(window.location);
+    console.log(window.location.href);
+    console.log(window.location.port);
+    console.log(window.location.protocol);
+

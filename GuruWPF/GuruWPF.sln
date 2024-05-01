@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuruWPF", "GuruWPF\GuruWPF.csproj", "{6D1209AF-FC37-4889-AA17-12CC4253E035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickReview", "QuickReview\QuickReview.csproj", "{652B548E-1EC3-4502-AC30-D714E9A82BDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{DEB74793-850E-4588-9D36-239AB2CD6724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMTests", "MVVMTests\MVVMTests.csproj", "{B4A6D74C-8C19-4370-9D33-FF6680D32AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMLight", "MVVMLight\MVVMLight.csproj", "{553CC1B9-7DE9-4ABD-98A1-4431828C2FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynda_Wpf", "Lunda_Wpf\Lynda_Wpf.csproj", "{B9515B2D-6C9B-43B3-9DF2-C06129865FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test2019", "Test2019\Test2019.csproj", "{85F2DE9F-93EA-4DF5-B669-13AAF9DA3E84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D1209AF-FC37-4889-AA17-12CC4253E035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1209AF-FC37-4889-AA17-12CC4253E035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1209AF-FC37-4889-AA17-12CC4253E035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1209AF-FC37-4889-AA17-12CC4253E035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652B548E-1EC3-4502-AC30-D714E9A82BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652B548E-1EC3-4502-AC30-D714E9A82BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652B548E-1EC3-4502-AC30-D714E9A82BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652B548E-1EC3-4502-AC30-D714E9A82BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB74793-850E-4588-9D36-239AB2CD6724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB74793-850E-4588-9D36-239AB2CD6724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB74793-850E-4588-9D36-239AB2CD6724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB74793-850E-4588-9D36-239AB2CD6724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A6D74C-8C19-4370-9D33-FF6680D32AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A6D74C-8C19-4370-9D33-FF6680D32AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A6D74C-8C19-4370-9D33-FF6680D32AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A6D74C-8C19-4370-9D33-FF6680D32AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553CC1B9-7DE9-4ABD-98A1-4431828C2FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553CC1B9-7DE9-4ABD-98A1-4431828C2FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553CC1B9-7DE9-4ABD-98A1-4431828C2FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553CC1B9-7DE9-4ABD-98A1-4431828C2FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9515B2D-6C9B-43B3-9DF2-C06129865FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9515B2D-6C9B-43B3-9DF2-C06129865FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9515B2D-6C9B-43B3-9DF2-C06129865FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9515B2D-6C9B-43B3-9DF2-C06129865FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F2DE9F-93EA-4DF5-B669-13AAF9DA3E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F2DE9F-93EA-4DF5-B669-13AAF9DA3E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F2DE9F-93EA-4DF5-B669-13AAF9DA3E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F2DE9F-93EA-4DF5-B669-13AAF9DA3E84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25BCBD00-C787-48C5-8B97-A4A74675B7B6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterThreading", "MasterThreading\MasterThreading.csproj", "{2ED7C41E-FA70-4A89-ABDC-1A0B2F6A31B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsInWPF", "ThreadsInWPF\ThreadsInWPF.csproj", "{CEF7A511-2A2B-48E6-BA1E-D98DED9EA7EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ED7C41E-FA70-4A89-ABDC-1A0B2F6A31B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED7C41E-FA70-4A89-ABDC-1A0B2F6A31B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED7C41E-FA70-4A89-ABDC-1A0B2F6A31B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED7C41E-FA70-4A89-ABDC-1A0B2F6A31B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF7A511-2A2B-48E6-BA1E-D98DED9EA7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF7A511-2A2B-48E6-BA1E-D98DED9EA7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF7A511-2A2B-48E6-BA1E-D98DED9EA7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF7A511-2A2B-48E6-BA1E-D98DED9EA7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

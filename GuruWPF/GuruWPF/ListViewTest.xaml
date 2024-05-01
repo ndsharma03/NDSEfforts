@@ -1,0 +1,62 @@
+﻿<Window x:Class="GuruWPF.ListViewTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="ListViewTest" Height="1200" Width="1200">
+    <Window.Resources>
+        <!--List view Items row color changing based on DeptID Value: Showing the use of DataTrigger--> 
+        <Style TargetType="ListViewItem" x:Key="lstViewItemStyle">
+            <Style.Triggers>
+                <!--<DataTrigger Binding="{Binding Path=DeptId}" Value="2">
+                    <Setter Property="Background" Value="CadetBlue"></Setter>
+                </DataTrigger>-->
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Path=LastName}" Value="LName1"></Condition>
+                        <Condition Binding="{Binding Path=age}" Value="11"></Condition>
+                    </MultiDataTrigger.Conditions>
+                    <Setter Property="Background" Value="DarkOrange"></Setter>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ListView ItemsSource="{Binding}" SelectionChanged="ListView_SelectionChanged_1" ItemContainerStyle="{StaticResource lstViewItemStyle}">
+
+            <ListView.View>
+
+                <GridView AllowsColumnReorder="true"
+              ColumnHeaderToolTip="Employee Information">
+
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=FirstName}" 
+                      Header="First Name" Width="100"/>
+
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=LastName}" 
+                      Width="100">
+                        <GridViewColumnHeader>Last Name
+                            <GridViewColumnHeader.ContextMenu>
+                                <ContextMenu  MenuItem.Click="LastNameCM_Click"  
+                                        Name="LastNameCM">
+                                    <MenuItem Header="Ascending" />
+                                    <MenuItem Header="Descending" />
+                                </ContextMenu>
+                            </GridViewColumnHeader.ContextMenu>
+                        </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=age}" 
+                      Header="Age" Width="100"/>
+                    <GridViewColumn DisplayMemberBinding=
+                          "{Binding Path=phone}" 
+                      Header="Phone number" Width="100"/>
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

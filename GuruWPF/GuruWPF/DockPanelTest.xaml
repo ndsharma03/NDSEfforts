@@ -1,0 +1,16 @@
+﻿<Window x:Class="GuruWPF.DockPanelTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="DockPanelTest" Height="600" Width="1000">
+    <DockPanel Background="Beige">
+        <Label Background="Green" DockPanel.Dock="Top" Content="this is a test lable 1"></Label>
+        <Label Background="red" DockPanel.Dock="Left" Content="this is a test lable 1"></Label>
+        <Label Background="blue" DockPanel.Dock="Right" Content="this is a test lable 1"></Label>
+        <Label Background="pink" DockPanel.Dock="Top" Content="this is a test lable 1"></Label>
+        <Label Background="LightGray" DockPanel.Dock="Bottom"  Content="this is a test lable 1"></Label>
+    </DockPanel>
+</Window>

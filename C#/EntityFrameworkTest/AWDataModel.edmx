@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AdventureWorks2017Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6005: The data type 'hierarchyid' is currently not supported for the target Entity Framework version; the column 'OrganizationNode' in the table 'AdventureWorks2017.HumanResources.Employee' was excluded.-->
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="NationalIDNumber" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="LoginID" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="OrganizationLevel" Type="smallint" StoreGeneratedPattern="Computed" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="BirthDate" Type="date" Nullable="false" />
+          <Property Name="MaritalStatus" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="Gender" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="HireDate" Type="date" Nullable="false" />
+          <Property Name="SalariedFlag" Type="bit" Nullable="false" />
+          <Property Name="VacationHours" Type="smallint" Nullable="false" />
+          <Property Name="SickLeaveHours" Type="smallint" Nullable="false" />
+          <Property Name="CurrentFlag" Type="bit" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AdventureWorks2017.HumanResources.vEmployee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vEmployee">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+            <PropertyRef Name="JobTitle" />
+            <PropertyRef Name="EmailPromotion" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="StateProvinceName" />
+            <PropertyRef Name="PostalCode" />
+            <PropertyRef Name="CountryRegionName" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="8" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Suffix" Type="nvarchar" MaxLength="10" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="25" />
+          <Property Name="PhoneNumberType" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailPromotion" Type="int" Nullable="false" />
+          <Property Name="AddressLine1" Type="nvarchar" MaxLength="60" Nullable="false" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="60" />
+          <Property Name="City" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="StateProvinceName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="CountryRegionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="AdditionalContactInfo" Type="xml" />
+        </EntityType>
+        <Function Name="GetEmployeeById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="empId" Type="int" Mode="In" />
+          <Parameter Name="empCount" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="uspGetEmployeeManagers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="BusinessEntityID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="AdventureWorks2017ModelStoreContainer">
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="HumanResources" store:Type="Tables" />
+          <EntitySet Name="vEmployee" EntityType="Self.vEmployee" store:Type="Views" store:Schema="HumanResources">
+            <DefiningQuery>SELECT 
+    [vEmployee].[BusinessEntityID] AS [BusinessEntityID], 
+    [vEmployee].[Title] AS [Title], 
+    [vEmployee].[FirstName] AS [FirstName], 
+    [vEmployee].[MiddleName] AS [MiddleName], 
+    [vEmployee].[LastName] AS [LastName], 
+    [vEmployee].[Suffix] AS [Suffix], 
+    [vEmployee].[JobTitle] AS [JobTitle], 
+    [vEmployee].[PhoneNumber] AS [PhoneNumber], 
+    [vEmployee].[PhoneNumberType] AS [PhoneNumberType], 
+    [vEmployee].[EmailAddress] AS [EmailAddress], 
+    [vEmployee].[EmailPromotion] AS [EmailPromotion], 
+    [vEmployee].[AddressLine1] AS [AddressLine1], 
+    [vEmployee].[AddressLine2] AS [AddressLine2], 
+    [vEmployee].[City] AS [City], 
+    [vEmployee].[StateProvinceName] AS [StateProvinceName], 
+    [vEmployee].[PostalCode] AS [PostalCode], 
+    [vEmployee].[CountryRegionName] AS [CountryRegionName], 
+    [vEmployee].[AdditionalContactInfo] AS [AdditionalContactInfo]
+    FROM [HumanResources].[vEmployee] AS [vEmployee]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdventureWorks2017Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="NationalIDNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoginID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OrganizationLevel" Type="Int16" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MaritalStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SalariedFlag" Type="Boolean" Nullable="false" />
+          <Property Name="VacationHours" Type="Int16" Nullable="false" />
+          <Property Name="SickLeaveHours" Type="Int16" Nullable="false" />
+          <Property Name="CurrentFlag" Type="Boolean" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="vEmployee">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+            <PropertyRef Name="JobTitle" />
+            <PropertyRef Name="EmailPromotion" />
+            <PropertyRef Name="AddressLine1" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="StateProvinceName" />
+            <PropertyRef Name="PostalCode" />
+            <PropertyRef Name="CountryRegionName" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Suffix" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+          <Property Name="AddressLine1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AddressLine2" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StateProvinceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PostalCode" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CountryRegionName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="AdventureWorks2017Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="vEmployees" EntityType="Self.vEmployee" />
+          <FunctionImport Name="uspGetEmployeeManagers" ReturnType="Collection(AdventureWorks2017Model.uspGetEmployeeManagers_Result)">
+          <Parameter Name="BusinessEntityID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetEmployeeById">
+            <Parameter Name="empId" Mode="In" Type="Int32" />
+            <Parameter Name="empCount" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="uspGetEmployeeManagers_Result">
+          <Property Type="Int32" Name="RecursionLevel" Nullable="true" />
+          <Property Type="Int32" Name="BusinessEntityID" Nullable="true" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="OrganizationNode" Nullable="true" MaxLength="4000" />
+          <Property Type="String" Name="ManagerFirstName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ManagerLastName" Nullable="false" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdventureWorks2017ModelStoreContainer" CdmEntityContainer="AdventureWorks2017Entities">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="AdventureWorks2017Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="NationalIDNumber" ColumnName="NationalIDNumber" />
+                <ScalarProperty Name="LoginID" ColumnName="LoginID" />
+                <ScalarProperty Name="OrganizationLevel" ColumnName="OrganizationLevel" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="MaritalStatus" ColumnName="MaritalStatus" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+                <ScalarProperty Name="SalariedFlag" ColumnName="SalariedFlag" />
+                <ScalarProperty Name="VacationHours" ColumnName="VacationHours" />
+                <ScalarProperty Name="SickLeaveHours" ColumnName="SickLeaveHours" />
+                <ScalarProperty Name="CurrentFlag" ColumnName="CurrentFlag" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vEmployees">
+            <EntityTypeMapping TypeName="AdventureWorks2017Model.vEmployee">
+              <MappingFragment StoreEntitySet="vEmployee">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberType" ColumnName="PhoneNumberType" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="EmailPromotion" ColumnName="EmailPromotion" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="StateProvinceName" ColumnName="StateProvinceName" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="CountryRegionName" ColumnName="CountryRegionName" />
+                <ScalarProperty Name="AdditionalContactInfo" ColumnName="AdditionalContactInfo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="uspGetEmployeeManagers" FunctionName="AdventureWorks2017Model.Store.uspGetEmployeeManagers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AdventureWorks2017Model.uspGetEmployeeManagers_Result">
+                <ScalarProperty Name="RecursionLevel" ColumnName="RecursionLevel" />
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="OrganizationNode" ColumnName="OrganizationNode" />
+                <ScalarProperty Name="ManagerFirstName" ColumnName="ManagerFirstName" />
+                <ScalarProperty Name="ManagerLastName" ColumnName="ManagerLastName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetEmployeeById" FunctionName="AdventureWorks2017Model.Store.GetEmployeeById" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

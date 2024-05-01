@@ -1,0 +1,28 @@
+﻿<Window x:Class="GuruWPF.HowTo.HowTo_DragDrop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF.HowTo"
+        mc:Ignorable="d"
+        Title="HowTo_DragDrop" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <UniformGrid Name="leftGrid" Background="LightGray" AllowDrop="True">
+            <Ellipse Name="ellip" Fill="Orange" Width="100" Height="100" Stroke="Blue" MouseEnter="Ellipse_MouseEnter" MouseDown="Ellipse_MouseDown">
+            </Ellipse>
+        </UniformGrid>
+        <UniformGrid Background="LightGreen" Grid.Column="1" AllowDrop="True" Drop="UniformGrid_Drop"
+                     ></UniformGrid>
+       
+        <Button Grid.Column="0" Grid.Row="1" Name="btn1"  Height="50" Content="Change ellipse via trigger"></Button>
+    </Grid>
+</Window>

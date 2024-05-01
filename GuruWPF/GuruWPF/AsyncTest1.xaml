@@ -1,0 +1,24 @@
+﻿<Window x:Class="GuruWPF.AsyncTest1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="AsyncTest1" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbl1" Content="trying to see the use of Async long runing method" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="728"/>
+        <Button  Name="btnStart" Height="30" Width="50" Content="StartLongRunningTask" Click="BtnStart_Click" Margin="312,231,430,158"/>
+        <Label x:Name="lblStepstaken" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.052,2.67" Margin="10,303,0,0" Width="Auto" Height="62"/>
+        <StackPanel>
+            <StackPanel>
+                <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="193.333" Margin="20,20,0,0"     
+VerticalAlignment="Top" Width="400.666" Background="#FFF5BDBD"     
+VirtualizingStackPanel.VirtualizationMode="Recycling"/>
+                <Button x:Name="LoadDataButton" Content="Load Data" HorizontalAlignment="Left"     
+Margin="20,18.666,0,0" VerticalAlignment="Top" Width="120.333" Height="29.667"     
+Click="LoadDataButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

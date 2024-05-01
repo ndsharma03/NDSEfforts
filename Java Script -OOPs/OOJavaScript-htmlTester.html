@@ -1,0 +1,27 @@
+<HTML>
+    <HEAD>
+        <script  language="Javascript">
+
+            class Employees{
+
+                constructor (name,surname){
+                    this.name=name,
+                    this.surname=surname
+                }
+                toString(){
+                    return this.name +' '+this.surname;
+                }
+            }
+         var e1=new Employees('Niranjan','Sharma');
+         var e2= new Employees('Pranamya','Sharma');
+         if(e1.surname==e2.surname)
+         document.write('They are equal!!');
+        document.write('<H1>'+ e1.name +"      "+ e2.name +'<H1>');
+                document.write('<H1>'+ e1.toString() +"      "+ e2.toString() +'<H1>');
+        document.write("Using object methods" + employee.getName() +"   " +employee.getLastName());
+        </script> 
+    </HEAD>
+    <BODY></BODY>
+</HTML>
+
+

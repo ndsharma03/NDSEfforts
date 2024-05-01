@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>   <!--JQUERY SELECTORS AND EVENTS-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  
+</head>
+<body>
+    <ul>
+        <li><input id="txtNumber" type="number"  width="100" height="30"> number</input></li>
+        <li><input id="txtPassword" type="password"   width="100" height="30">password </input></li>
+        <li><input id="txt" type="text" width="100" height="30">text </input></li>
+        <li> <input id="txtEmail" type="email" width="100" height="30">email</input></li>
+        <li><input id="txtRadio" type="radio" width="100" height="60">radio</input></li>
+        <li><input id="txtCheckBox" type="checkbox" width="100" height="50" >checkbox</input></li>
+        <li><input id="txtButton" type="button" width="50" height="30">Click Me!</input></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+                
+                // ******** function outside ready will also work----i.e. not necessary to put in ready function.
+                // $("#txtButton").click(
+                //    function(){
+                //        // $("#txtCheckBox").hide(); //searching by Id.
+                //        $('[height=50]').hide(); //searching by attribute
+                //     }
+                // ); 
+              
+            $(document).ready(function(){
+               $("#txtButton").click(
+                   function(){
+                       // $("#txtCheckBox").hide(); //searching by Id.
+                       $('[height=50]').hide(); //searching by attribute
+                    }
+                ); 
+              //  both event on same elements are working. when button clicked!
+              $("#txtButton").click(
+                   function(){
+                    $('[height=60]').hide();                ;
+                    }
+                ); 
+                $("input").dblclick(function() // double click on any element will hide it.
+                {
+                    $(this).hide("1000"); // Slow
+                  // $(this).hide("fast"); 
+                });
+               
+                //Multiple evenet via On() method
+                //like below multiple event we can attche with an element.
+                $('input').on(
+                    {
+                        mouseenter:function(){
+                            $(this).css('background-color',"pink"); 
+                        },
+                        mouseleave:function(){
+                            $(this).css('background-color',"white"); 
+                        }
+                    }
+                )
+                //Another Way to Attach event 
+                $("txtCheckBox").on("mouseenter",function(){
+                    $(this).css("background-color","green");
+                }
+                );
+
+            });
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "Id": 0,
+  "EntityName": "Notes",
+  "Title": "FirstNotes",
+  "Description": "Test Notes",
+  "Content": "ABC",
+  "CategotyId": 1,
+  "SubCategory": 2,
+  "Comments": "Comment1",
+  "Attachements": [
+    "Attachment1"
+  ],
+  "CreatedBy": 0,
+  "CreateDate": "0001-01-01T00:00:00",
+  "ModifiedBy": 0,
+  "ModifiedDate": "0001-01-01T00:00:00"
+}

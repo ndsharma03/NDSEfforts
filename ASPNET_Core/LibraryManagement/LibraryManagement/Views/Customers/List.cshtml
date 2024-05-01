@@ -1,0 +1,43 @@
+﻿@using LibraryManagement.Data;
+@model IEnumerable<Customer>
+
+@{
+    ViewData["Title"] = "Customer List";
+}
+
+<h3>Customer List</h3>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>Name</th>
+            <th>Borrowed books count</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                   @item.Id
+                </td>
+                <td>"@item.Name</td>
+                <td>@item?.Books?.Count()</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

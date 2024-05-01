@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--https://www.dyn-web.com/tutorials/forms/select/multi-selected.php-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="temp/Scripts/jquery.js"></script>
+</head>
+
+<body>
+    <input id="txtName" type="text"><br>
+    <input id="txtVal" type="text" value="Hello"><br>
+    <input name="txtGender" type="radio" value="Male" text="Male">
+    <br>
+    <input name="txtGender" type="radio" value="female" text="Female" selected>
+    <br>
+    <select style="width:100px;" id="ddlCountry" type="select" multiple>
+            <option value="india">india</option>
+            <option value="Russia">Russia</option>
+            <option value="SA">SA</option>
+    </select>
+</br>
+<input id="inp"style="background-color: chartreuse;">
+<button id="btnSubmit" value="Click Me!" >Click me</button>
+<br>
+<button id="btnSubmit1" value="Click Me!" >Click me</button>
+
+<div id="div1"></div>
+<br>
+    <script type="text/javascript">
+
+    
+$(function(){
+$("#btnSubmit1")
+.on('click',function(){
+    // alert($('#inp').attr('style'));
+    // $('#inp').attr('style').value("background-color:red");
+
+var s=$("#ddlCountry").children();
+Array.from(s).forEach(element => {
+     console.dir(element.value)}
+     );
+// adding new element
+var newElement="<button id='btnnew'>Button New</button>";
+ $("body").append(newElement);
+ // End adding new element
+ 
+ //loading data from a file into div
+ $("#div1").load("Interview23Jan20.js"); //file name.
+
+
+
+});
+});
+$("#btnSubmit").click(function () {
+                var sel=document.getElementById('ddlCountry');
+                alert(sel.options.length);
+                var selectedval, opts = [], opt="";
+                // loop through options in select list
+                for (var i=0, len=sel.options.length; i<len; i++) 
+                {
+                    opt = opt+" "+sel.options[i].value;
+                    if(sel.options[i].selected)
+                    {
+                        selectedval+=sel.options[i].value;
+                    }
+                }
+
+               // alert($('txtGender').val());
+                console.log(opt);
+                console.log(selectedval);
+});
+
+    </script>
+</body>
+
+</html>

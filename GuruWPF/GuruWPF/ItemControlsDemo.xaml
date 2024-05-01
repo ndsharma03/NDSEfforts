@@ -1,0 +1,71 @@
+﻿<Window x:Class="GuruWPF.ItemControlsDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuruWPF"
+        mc:Ignorable="d"
+        Title="ItemControlsDemo" Background="Beige" Height="450" Width="850">
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid Background="LightGray" >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ItemsControl x:Name="EmployeeList" ItemsSource="{Binding}"  Grid.Row="0" Height="400" VerticalAlignment="Top">
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                   <Border x:Name="ItemBorder" Background="DimGray" CornerRadius="4" Height="{Binding Source={TemplateBinding Height}}"  >
+                        <ScrollViewer VerticalScrollBarVisibility="Visible">
+
+                            <ItemsPresenter/>
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            <ItemsControl.ItemContainerStyle>
+                <Style>
+                    <!--<Setter Property="Control.Width" Value="100"/>-->
+                    <Setter Property="Control.Margin" Value="5"/>
+                    
+                    <Style.Triggers>
+                        <Trigger Property="Control.IsMouseOver" Value="True">
+                            <Setter Property="Control.ToolTip"
+                  Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                          Path=Content.FirstName}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ItemsControl.ItemContainerStyle>
+            <!--<ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"  ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"></StackPanel>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>-->
+            <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="{x:Type local:Employee}">
+                    <Border Background="Green" CornerRadius="7" BorderThickness="5" >
+                    <StackPanel Orientation="Horizontal" Background="Beige"  Margin="5" >
+                        <Button Content="{Binding Path=DeptId}" Margin="10" Width="20" Height="20" Click="Button_Click"></Button>
+                            <TextBlock Text="{Binding Path=FirstName}"  Margin="10"></TextBlock>
+                            <TextBlock Text="{Binding Path=LastName}"  Margin="10"></TextBlock>
+                            <TextBlock Text="{Binding Path=phone}"  Margin="10"></TextBlock>
+                           
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <!--second Row-->
+        <StackPanel Background="Beige" Grid.Row="1">
+            <Label x:Name="lblFname"></Label>
+            <Label x:Name="lblLname"></Label>
+            <Label x:Name="lblage"></Label>
+            <Label x:Name="lblphone"></Label>
+            <Label x:Name="lblAdd"></Label>
+            <Button x:Name="btnItemContrainerItem" Click="BtnItemContrainerItem_Click" Content="Get ITemControlItems"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

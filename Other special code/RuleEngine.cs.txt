@@ -1,0 +1,102 @@
+class Employee
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
+    public int BadgeNumber { get; set; }
+    public decimal salary { get; set; }
+    public int age { get; set; }
+}
+
+class ValidationResult
+{
+    public bool Valid { get; private set;}
+    public string Message { get; private set; }
+
+    private ValidationResult(bool success, string message = null)
+    {
+
+    }
+
+    public static ValidationResult Success()
+    {
+        return new ValidationResult(true);
+    }
+
+    public static ValidationResult Fail()
+    {
+        return new ValidationResult(true);
+    }
+
+    public ValidationResult WithMessage(string message)
+    {
+        return new ValidationResult(this.Valid, message);
+    }
+}
+
+class ValidationContext
+{
+    //might want to make this "freezable"/"popsicle" and perhaps
+    //you might want to validate cross-entity somehow
+    //will you always make a new entity containing 2 or 3 sub entities for this case?
+    List<Rule> rules = new List<Rule>();
+
+    public ValidationContext(params Rule[] rules)
+    {
+        this.rules = rules.ToList();
+    }
+
+    //how do you know each rule applies to which entity?
+    private List<ValidationResult> GetResults()
+    {
+        var results = new List<ValidationResult>();
+        foreach (var rule in rules)
+        {
+            results.Add(rule.Validate(this));
+        }
+
+        return results;
+    }
+
+    public void AddRule(Rule r)
+    {
+        this.rules.Add(r);
+    }
+
+}
+
+abstract class Rule
+{        
+    public abstract ValidationResult Validate(ValidationContext context);
+
+    public static Rule<TEntityType> Create<TEntityType>(TEntityType entity, Func<TEntityType, ValidationResult> rule)
+    {
+        Rule<TEntityType> newRule = new Rule<TEntityType>();
+        newRule.rule = rule;
+        newRule.entity = entity;
+        return newRule;
+    }
+}
+
+class Rule<T> : Rule
+{
+    internal T entity;
+    internal Func<T, ValidationResult> rule;
+
+    public override ValidationResult Validate(ValidationContext context)
+    {
+        return rule(entity);
+    }
+}
+
+//usage: only rule creation since I need sleep. I have to hold an interview in 4 hours, I hope you are happy :)
+class Program
+{
+    static void Main(string[] args)
+    {
+        var employee = new Employee { age = 80 };
+        var employeeMustBe80 = Rule.Create(employee,
+                                           e => e.age > 80 ?
+                                           ValidationResult.Success().WithMessage("he should retire") :
+                                           ValidationResult.Fail().WithMessage("this guy gets no pension");
+    }
+}

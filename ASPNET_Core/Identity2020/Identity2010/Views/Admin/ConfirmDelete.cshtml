@@ -1,0 +1,12 @@
+﻿@model AppUser
+
+<div class="m-1 p-1 bg-light text-danger"><h5> ! Are you sure you want to delete user Name = @Model.UserName & Id = @Model.Id. </h5></div>
+<div class="m-1 p-1" >
+
+
+    <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+        <button type="submit" class="btn btn-primary">Ok</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
+</div>
