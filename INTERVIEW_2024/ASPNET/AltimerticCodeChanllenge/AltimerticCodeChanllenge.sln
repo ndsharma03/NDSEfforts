@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AltimerticCodeChanllenge", "AltimerticCodeChanllenge.csproj", "{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugApiTests", "..\DrugApiTests\DrugApiTests.csproj", "{8B72AA7D-6567-43DD-B52A-E68068A2B302}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B72AA7D-6567-43DD-B52A-E68068A2B302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B72AA7D-6567-43DD-B52A-E68068A2B302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B72AA7D-6567-43DD-B52A-E68068A2B302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B72AA7D-6567-43DD-B52A-E68068A2B302}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAF54E07-DBD9-4C04-8E5D-59BB9A6CA307}
+	EndGlobalSection
+EndGlobal

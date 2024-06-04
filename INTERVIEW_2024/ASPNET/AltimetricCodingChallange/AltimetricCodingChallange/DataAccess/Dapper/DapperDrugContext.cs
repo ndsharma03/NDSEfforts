@@ -1,0 +1,21 @@
+﻿using Microsoft.Data.SqlClient;
+using System.Data;
+
+namespace AltimerticCodeChanllenge.DataAccess.Dapper
+{
+    public class DapperDrugContext
+    {
+        
+            private readonly IConfiguration _configuration;
+            private readonly string _connectionString;
+
+            public DapperDrugContext(IConfiguration configuration)
+            {
+                _configuration = configuration;
+                _connectionString = _configuration.GetConnectionString("SqlConnection")!;
+            }
+
+            public IDbConnection CreateConnection()=> new SqlConnection(_connectionString);
+        }
+    
+}

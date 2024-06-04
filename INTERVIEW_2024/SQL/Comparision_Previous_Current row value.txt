@@ -1,0 +1,21 @@
+SELECT 
+    current.Value,
+    previous.Value AS PreviousValue,
+    CASE 
+        WHEN current.Value > previous.Value THEN 'Greater'
+        WHEN current.Value < previous.Value THEN 'Lesser'
+        ELSE 'Equal'
+    END AS Comparison
+FROM (
+    SELECT 
+        Value,
+        LAG(Value) OVER (ORDER BY [YourOrderColumn]) AS PreviousValue
+    FROM YourTableName
+) AS current
+JOIN (
+    SELECT 
+        Value,
+        LAG(Value) OVER (ORDER BY [YourOrderColumn]) AS PreviousValue
+    FROM YourTableName
+) AS previous
+ON current.PreviousValue = previous.Value

@@ -1,0 +1,14 @@
+WITH DateRange AS (
+    SELECT DISTINCT TOP (15) CAST(your_date_column AS DATE) as DateValue
+    FROM your_table_name
+    WHERE your_date_column <= CAST(GETDATE() AS DATE)
+    ORDER BY your_date_column DESC
+),
+AverageRates AS (
+    SELECT 
+        dr.DateValue,
+        (SELECT AVG(rate) 
+         FROM your_table_name 
+         WHERE CAST(your_date_column AS DATE) <= dr.DateValue
+         AND CAST(your_date_column AS DATE) > DATEADD(DAY, -15, dr.DateValue)) as AvgRate
+    FROM DateRange dr
