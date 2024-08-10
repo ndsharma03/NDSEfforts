@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Builder;
 using MiddlewareTest.CustomMiddleware;
+using MiddlewareTest.Services;
 
 namespace MiddlewareTest
 {
@@ -10,11 +11,15 @@ namespace MiddlewareTest
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddTransient<CustomMiddlewareUsingIMiddleware>();
+
+            //Adding scoped service.
+            builder.Services.AddScoped<IScopedServiceClass, ScopedServiceClass>();
+            
             var app = builder.Build();
-          
+
 
             // ********* Braching the request pipeline.
-            app.Map("/map1",NewPipelingUsingMap);
+            app.Map("/map1", NewPipelingUsingMap);
 
             app.Map("/map2", NewPipelineUsingMapWithUse);
 
@@ -22,14 +27,13 @@ namespace MiddlewareTest
             app.MapWhen(context => context.Request.Query.ContainsKey("q"), CallForMapWhen);
 
             // ********** antoerh way to create middleware using USE
+            //App.UseWhen will re-join the current pipeline. 
 
-            //App.UseWhen will join the current pipeline back 
-
-            app.UseWhen(context => context.Request.Query.ContainsKey("n"),CallWithUseWhen);
+            app.UseWhen(context => context.Request.Query.ContainsKey("n"), CallWithUseWhen);
 
             app.Use(async (context, next) =>
             {
-                await Console.Out.WriteLineAsync("***********"+ context.Request.Path.Value +"**************");
+                await Console.Out.WriteLineAsync("***********" + context.Request.Path.Value + "**************");
                 Console.WriteLine("before next : Inside default pipeline's Use ");
                 await next(context);
                 Console.WriteLine("After next : Inside default pipeline's Use ");
@@ -41,6 +45,21 @@ namespace MiddlewareTest
 
             //Registration with DI required to use below middleware.
             app.UseMiddleware<CustomMiddlewareUsingIMiddleware>();
+
+            //*****Special case *********
+                    //Scoped lifetime services used by middleware constructors aren't shared with other dependency-injected types during each request.
+                    //To share a scoped service between middleware and other types, add these services to the InvokeAsync method's signature.
+                    //The InvokeAsync method can accept additional parameters that are populated by DI.
+                    app.UseMiddleware<ScopedServiceConsumerMiddleware>(); //this middleware calls scoped service in Invoke();
+
+                    app.Use(async (context, next) =>
+                    {
+                        var scopedserviceInstance = context.RequestServices.GetRequiredService<IScopedServiceClass>(); // calling scoped service.
+                        await scopedserviceInstance.DoSomething("From Inline (USE) Middleware.");
+                        await next();
+                    });
+            //--** End Special case **
+
             //********** Simplest terminator middleware
             app.Run(async context => await context.Response.WriteAsync("Jai Mata Di "));
             app.Run();
