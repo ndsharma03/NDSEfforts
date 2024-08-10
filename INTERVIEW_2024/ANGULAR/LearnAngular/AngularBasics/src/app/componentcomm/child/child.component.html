@@ -1,0 +1,9 @@
+<div style="border:1px solid green">
+  <h2>Child component</h2>
+  <hr />
+  <div class="controls">
+    <input class="control" type="text" id="txtcinput" #txtcinput />
+    <label class="control" style="background-color:lightblue" id="lblCMsg" width="100px; ">{{message}}</label>
+    <button (click)="onchildclick(txtcinput)">send</button>
+  </div>
+</div>

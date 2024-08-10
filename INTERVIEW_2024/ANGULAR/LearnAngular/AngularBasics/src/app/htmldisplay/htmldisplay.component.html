@@ -1,0 +1,4 @@
+<!--<section class="discontent" *ngIf="safeContent" innerHTML={{safeContent}}></section>-->
+<!--<div>{{num}}</div>-->
+<section class="discontent" *ngIf="num" innerHTML={{num}}></section> <!--string interpolation-->
+<section class="discontent" *ngIf="num" [innerHTML]="num"></section><!--one way property binding-->

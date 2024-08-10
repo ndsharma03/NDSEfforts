@@ -1,0 +1,10 @@
+.controls .control {
+  display: block;
+  margin: 10px; /* Optional: Adds space between controls */
+  padding:5px;
+}
+div {
+  margin: 5px;
+  padding: 5px;
+}
+

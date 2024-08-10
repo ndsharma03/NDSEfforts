@@ -1,0 +1,21 @@
+<p>databiningtest works!</p>
+<h3> String interpolation</h3>
+
+<p> The number of students in class : {{noOfStudent}}</p> <!--stringinterpolation-->
+<div [innerText]="strContent"></div> <!--Property binding-->
+<hr />
+<div style="padding:10px;">
+  <p>below text box handle text change event:</p>
+  <input id="txt1" name="txt1" type="text" width="Auto" height="30px" (change)="txtChange($event)" />
+</div>
+
+<button id="btn" style="margin-top:10px;" width="50" height="30px" (click)="btn_click()">Show Hide RedLabel</button>
+<label style="background-color:Red" [hidden]="hideContent"> This is RedLabel</label>
+
+<label>Two way data binding example below:</label>
+
+<div>
+  <input type="text" name="txtTwoway" width="100px" [(ngModel)]="twowayInput" />
+
+  <p style="margin-top:10px;">{{twowayInput}}</p>
+</div>

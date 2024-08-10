@@ -1,0 +1,41 @@
+<div style="display:flex ;border:1px solid blue;">
+
+  <div style="border: 1px solid orange; width: 50%; height:100%;">
+
+    <h2>Parent component</h2>
+    <hr />
+    <div class="controls">
+      <input class="control" type="text" id="txtpinput" #txtpinput [(ngModel)]="messageToChild" />
+      <label class="control" style="background-color:lightblue" id="lblPMsg" width="100px; ">{{messageFromChildP}}</label>
+      <button (click)="onParentButtonClick(child)">Send</button>
+    </div>
+
+
+  </div>
+  <div style="border: 1px solid blue; width: 50%"><app-child #child [(messageToParent)]="messageFromChildP"></app-child></div>
+
+  <!--Another way by handling event raised by child.-->
+  <!--<div style="border: 1px solid blue; width: 50%"><app-child #child (messageToParentChange)="onMessageChangeAtClient($event)"></app-child></div>-->
+  <h3>
+    About:
+
+  </h3>
+
+  <ul>
+    <li>AtParent side: Parent component have a property 'messageToChild' , which is two way binded to text input so it would conatains same text as input</li>
+    <li>On button click we are passing reference of child,and accessing it's input property'message', setting this message from parent'</li>
+    <li>On the client side this message will be bound to the property label </li>
+    <li> <hr /></li>
+    <li> At Client: </li>
+    <li> we have a input (messageToParent) and a output (messageToParentChange) property </li>
+    <li> Instead of creating a property and two-way bind it to input-text, we are directly getting HTMLInputElement reference in button click.</li>
+    <li>Emmiting event on button click and passing values from txtInput.</li>
+    <li> here we have omit messageToParent input property but in that can parent will not be able to two-way bind this property </li>
+
+    <li><hr /></li>
+    <li>Above mentioned steps uses two way data binding to get values from client.</li>
+    <li> alternatively, we can handle event raised by client at parent side. In that case only output property(event) required at child.Input propertynot needed.</li>
+  </ul>
+
+
+</div>

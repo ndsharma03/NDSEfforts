@@ -1,0 +1,551 @@
+2024-06-06 02:27:39.396 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-06 02:27:40.492 +05:30 [DBG] Hosting starting
+2024-06-06 02:27:40.672 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-06 02:27:40.686 +05:30 [DBG] Reading data from file 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys\key-59435569-f291-4834-82c9-265f4864cec5.xml'.
+2024-06-06 02:27:40.763 +05:30 [DBG] Found key {59435569-f291-4834-82c9-265f4864cec5}.
+2024-06-06 02:27:40.794 +05:30 [DBG] Considering key {59435569-f291-4834-82c9-265f4864cec5} with expiration date 2024-08-03 20:42:24Z as default key.
+2024-06-06 02:27:40.802 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:27:40.809 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-06-06 02:27:40.814 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:27:40.823 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-06-06 02:27:40.829 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-06-06 02:27:40.835 +05:30 [DBG] Using key {59435569-f291-4834-82c9-265f4864cec5} as the default key.
+2024-06-06 02:27:40.839 +05:30 [DBG] Key ring with default key {59435569-f291-4834-82c9-265f4864cec5} was loaded during application startup.
+2024-06-06 02:27:41.253 +05:30 [INF] Now listening on: https://localhost:7140
+2024-06-06 02:27:41.256 +05:30 [INF] Now listening on: http://localhost:5215
+2024-06-06 02:27:41.259 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChallenge
+2024-06-06 02:27:41.262 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-06 02:27:41.264 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-06 02:27:41.266 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-06 02:27:41.268 +05:30 [INF] Hosting environment: Development
+2024-06-06 02:27:41.270 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimetricCodingChallange\AltimetricCodingChallange
+2024-06-06 02:27:41.273 +05:30 [DBG] Hosting started
+2024-06-06 02:27:41.283 +05:30 [DBG] Connection id "0HN45K8HTVBAQ" accepted.
+2024-06-06 02:27:41.286 +05:30 [DBG] Connection id "0HN45K8HTVBAQ" started.
+2024-06-06 02:27:41.763 +05:30 [DBG] Connection id "0HN45K8HTVBAR" accepted.
+2024-06-06 02:27:41.767 +05:30 [DBG] Connection id "0HN45K8HTVBAR" started.
+2024-06-06 02:27:41.869 +05:30 [DBG] Connection id "0HN45K8HTVBAS" accepted.
+2024-06-06 02:27:41.903 +05:30 [DBG] Connection id "0HN45K8HTVBAS" started.
+2024-06-06 02:27:42.032 +05:30 [DBG] Connection id "0HN45K8HTVBAT" accepted.
+2024-06-06 02:27:42.039 +05:30 [DBG] Connection id "0HN45K8HTVBAT" started.
+2024-06-06 02:27:42.136 +05:30 [DBG] Connection id "0HN45K8HTVBAT" received FIN.
+2024-06-06 02:27:42.160 +05:30 [DBG] Connection 0HN45K8HTVBAS established using the following protocol: "Tls12"
+2024-06-06 02:27:42.160 +05:30 [DBG] Connection 0HN45K8HTVBAT established using the following protocol: "Tls12"
+2024-06-06 02:27:42.250 +05:30 [DBG] Connection id "0HN45K8HTVBAT" is closed. The last processed stream ID was 0.
+2024-06-06 02:27:42.292 +05:30 [DBG] Connection id "0HN45K8HTVBAT" sending FIN because: "The client closed the connection."
+2024-06-06 02:27:42.349 +05:30 [DBG] The connection queue processing loop for 0HN45K8HTVBAT completed.
+2024-06-06 02:27:42.362 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger - -
+2024-06-06 02:27:42.363 +05:30 [DBG] Connection id "0HN45K8HTVBAT" stopped.
+2024-06-06 02:27:42.430 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-06 02:27:42.496 +05:30 [DBG] No candidates found for the request path '/swagger'
+2024-06-06 02:27:42.500 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:42.515 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:42.583 +05:30 [INF] Response:
+StatusCode: 301
+Location: swagger/index.html
+2024-06-06 02:27:42.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger - - - 301 0 - 249.2541ms
+2024-06-06 02:27:42.639 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/index.html - -
+2024-06-06 02:27:42.644 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-06-06 02:27:42.646 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:42.652 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:43.169 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-06-06 02:27:44.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/swagger-ui.css - -
+2024-06-06 02:27:44.849 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/swagger-ui-bundle.js - -
+2024-06-06 02:27:44.852 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/swagger-ui-standalone-preset.js - -
+2024-06-06 02:27:44.858 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html;charset=utf-8
+Date: Wed, 05 Jun 2024 20:57:44 GMT
+Server: Kestrel
+2024-06-06 02:27:44.865 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-06-06 02:27:44.866 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-06-06 02:27:44.868 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2024-06-06 02:27:44.873 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:44.874 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-06-06 02:27:44.875 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:44.877 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:44.880 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui.css
+Accept: text/css,*/*;q=0.1
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:44.886 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-bundle.js
+Accept: */*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:44.888 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-standalone-preset.js
+Accept: */*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:44.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/index.html - - - 200 - text/html;charset=utf-8 2251.2182ms
+2024-06-06 02:27:44.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - -
+2024-06-06 02:27:44.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 33.6656ms
+2024-06-06 02:27:45.051 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-06 02:27:45.060 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-06 02:27:45.088 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Wed, 05 Jun 2024 20:57:44 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 19 Jul 2022 15:21:48 GMT
+Content-Length: 143943
+2024-06-06 02:27:45.091 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-06 02:27:45.092 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/javascript
+Date: Wed, 05 Jun 2024 20:57:44 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 19 Jul 2022 15:21:48 GMT
+Content-Length: 339486
+2024-06-06 02:27:45.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/swagger-ui.css - - - 200 143943 text/css 249.9102ms
+2024-06-06 02:27:45.099 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/javascript
+Date: Wed, 05 Jun 2024 20:57:44 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 19 Jul 2022 15:21:48 GMT
+Content-Length: 1096145
+2024-06-06 02:27:45.101 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 248.8716ms
+2024-06-06 02:27:45.112 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_vs/browserLink - -
+2024-06-06 02:27:45.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 269.5640ms
+2024-06-06 02:27:45.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 157.3148ms
+2024-06-06 02:27:45.599 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - -
+2024-06-06 02:27:45.604 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-06 02:27:45.607 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:27:45.610 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:27:46.061 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json;charset=utf-8
+Date: Wed, 05 Jun 2024 20:57:45 GMT
+Server: Kestrel
+2024-06-06 02:27:46.067 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 467.0186ms
+2024-06-06 02:27:51.559 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-06 02:27:51.562 +05:30 [DBG] Connection id "0HN45K8HTVBAQ" stopped.
+2024-06-06 02:27:51.563 +05:30 [DBG] Connection id "0HN45K8HTVBAQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-06 02:27:51.943 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-06 02:27:51.944 +05:30 [DBG] Connection id "0HN45K8HTVBAR" stopped.
+2024-06-06 02:27:51.947 +05:30 [DBG] Connection id "0HN45K8HTVBAR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-06 02:28:33.855 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7140/api/Auth application/json 57
+2024-06-06 02:28:33.881 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth'
+2024-06-06 02:28:33.888 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)' with route pattern 'api/Auth' is valid for the request path '/api/Auth'
+2024-06-06 02:28:33.892 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-06 02:28:33.894 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/Auth
+Accept: */*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 57
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:28:33.897 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-06 02:28:35.050 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-06 02:28:35.056 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-06 02:28:35.090 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(AltimerticCodeChallenge.DTO.User) on controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge).
+2024-06-06 02:28:35.096 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-06 02:28:35.099 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-06 02:28:35.101 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-06 02:28:35.105 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-06 02:28:35.108 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-06 02:28:35.113 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-06 02:28:35.117 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-06 02:28:35.138 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-06 02:28:35.145 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' using the name '' in request data ...
+2024-06-06 02:28:35.149 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-06-06 02:28:35.159 +05:30 [DBG] Connection id "0HN45K8HTVBAS", Request id "0HN45K8HTVBAS:00000011": started reading request body.
+2024-06-06 02:28:35.163 +05:30 [DBG] Connection id "0HN45K8HTVBAS", Request id "0HN45K8HTVBAS:00000011": done reading request body.
+2024-06-06 02:28:35.171 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'AltimerticCodeChallenge.DTO.User'
+2024-06-06 02:28:35.175 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-06 02:28:35.177 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-06 02:28:35.180 +05:30 [DBG] Attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-06 02:28:35.194 +05:30 [DBG] Done attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-06 02:28:35.204 +05:30 [INF] Enter : GenerateToken()
+2024-06-06 02:28:35.499 +05:30 [INF] Exit : GenerateToken()
+2024-06-06 02:28:35.504 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-06 02:28:35.512 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-06-06 02:28:35.514 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-06 02:28:35.516 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-06 02:28:35.518 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-06 02:28:35.521 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-06-06 02:28:35.530 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge) in 413.0005ms
+2024-06-06 02:28:35.534 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-06 02:28:35.536 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 05 Jun 2024 20:58:34 GMT
+Server: Kestrel
+2024-06-06 02:28:35.538 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7140/api/Auth application/json 57 - 200 - text/plain;+charset=utf-8 1683.0747ms
+2024-06-06 02:28:58.835 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/api/Drug - -
+2024-06-06 02:28:58.839 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Drug'
+2024-06-06 02:28:58.859 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
+2024-06-06 02:28:58.863 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-06 02:28:58.866 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Drug
+Accept: */*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:28:58.869 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-06 02:28:58.962 +05:30 [DBG] Successfully validated the token.
+2024-06-06 02:28:58.965 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-06-06 02:28:58.976 +05:30 [DBG] Authorization was successful.
+2024-06-06 02:28:58.978 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-06 02:28:58.992 +05:30 [INF] Route matched with {action = "GetAll", controller = "Drug"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge).
+2024-06-06 02:28:58.996 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-06 02:28:58.998 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-06 02:28:59.001 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-06 02:28:59.005 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-06 02:28:59.007 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-06 02:28:59.010 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
+2024-06-06 02:28:59.013 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
+2024-06-06 02:28:59.017 +05:30 [INF] Enter: DrugController.GetAll()
+2024-06-06 02:28:59.221 +05:30 [INF] Enter: DrugReposiotry.GetAll
+2024-06-06 02:29:11.379 +05:30 [INF] Exit: DrugReposiotry.GetAll
+2024-06-06 02:29:11.387 +05:30 [INF] Exit: DrugController.GetAll()
+2024-06-06 02:29:11.392 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-06 02:29:11.398 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-06-06 02:29:11.399 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-06 02:29:11.401 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-06 02:29:11.403 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-06 02:29:11.408 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AltimerticCodeChallenge.Entities.Drug, AltimerticCodeChallenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-06 02:29:11.443 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge) in 12433.3239ms
+2024-06-06 02:29:11.448 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-06 02:29:11.451 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Wed, 05 Jun 2024 20:59:10 GMT
+Server: Kestrel
+2024-06-06 02:29:11.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/api/Drug - - - 200 - application/json;+charset=utf-8 12617.6451ms
+2024-06-06 02:29:53.132 +05:30 [DBG] Config reload token fired. Checking for changes...
+2024-06-06 02:29:53.404 +05:30 [DBG] Config reload token fired. Checking for changes...
+2024-06-06 02:30:13.849 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-06 02:30:14.287 +05:30 [DBG] Hosting starting
+2024-06-06 02:30:14.404 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-06 02:30:14.417 +05:30 [DBG] Reading data from file 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys\key-59435569-f291-4834-82c9-265f4864cec5.xml'.
+2024-06-06 02:30:14.448 +05:30 [DBG] Found key {59435569-f291-4834-82c9-265f4864cec5}.
+2024-06-06 02:30:14.479 +05:30 [DBG] Considering key {59435569-f291-4834-82c9-265f4864cec5} with expiration date 2024-08-03 20:42:24Z as default key.
+2024-06-06 02:30:14.487 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:30:14.496 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-06-06 02:30:14.501 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:30:14.512 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-06-06 02:30:14.518 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-06-06 02:30:14.524 +05:30 [DBG] Using key {59435569-f291-4834-82c9-265f4864cec5} as the default key.
+2024-06-06 02:30:14.528 +05:30 [DBG] Key ring with default key {59435569-f291-4834-82c9-265f4864cec5} was loaded during application startup.
+2024-06-06 02:30:14.991 +05:30 [INF] Now listening on: https://localhost:7140
+2024-06-06 02:30:14.995 +05:30 [INF] Now listening on: http://localhost:5215
+2024-06-06 02:30:14.998 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChallenge
+2024-06-06 02:30:15.001 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-06 02:30:15.006 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-06 02:30:15.009 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-06 02:30:15.011 +05:30 [INF] Hosting environment: Development
+2024-06-06 02:30:15.013 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimetricCodingChallange\AltimetricCodingChallange
+2024-06-06 02:30:15.016 +05:30 [DBG] Hosting started
+2024-06-06 02:30:15.203 +05:30 [DBG] Connection id "0HN45K9VPRHI8" received FIN.
+2024-06-06 02:30:15.206 +05:30 [DBG] Connection id "0HN45K9VPRHI8" accepted.
+2024-06-06 02:30:15.212 +05:30 [DBG] Connection id "0HN45K9VPRHI8" started.
+2024-06-06 02:30:15.378 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-06 02:30:15.609 +05:30 [DBG] Connection id "0HN45K9VPRHI9" accepted.
+2024-06-06 02:30:15.640 +05:30 [DBG] Connection id "0HN45K9VPRHI9" started.
+2024-06-06 02:30:15.645 +05:30 [DBG] Connection id "0HN45K9VPRHI8" stopped.
+2024-06-06 02:30:15.654 +05:30 [DBG] Connection id "0HN45K9VPRHI8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-06 02:30:15.745 +05:30 [DBG] Connection 0HN45K9VPRHI9 established using the following protocol: "Tls12"
+2024-06-06 02:30:15.936 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/index.html - -
+2024-06-06 02:30:15.978 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-06 02:30:16.027 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-06-06 02:30:16.032 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:30:16.046 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2024-06-06 02:30:16.228 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-06-06 02:30:16.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - -
+2024-06-06 02:30:16.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_vs/browserLink - -
+2024-06-06 02:30:16.560 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html;charset=utf-8
+Date: Wed, 05 Jun 2024 21:00:15 GMT
+Server: Kestrel
+2024-06-06 02:30:16.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 50.8649ms
+2024-06-06 02:30:16.596 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-06-06 02:30:16.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/index.html - - - 200 - text/html;charset=utf-8 685.8312ms
+2024-06-06 02:30:16.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 221.9784ms
+2024-06-06 02:30:17.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - -
+2024-06-06 02:30:17.070 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-06 02:30:17.072 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:30:17.074 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:30:17.422 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json;charset=utf-8
+Date: Wed, 05 Jun 2024 21:00:16 GMT
+Server: Kestrel
+2024-06-06 02:30:17.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 358.3577ms
+2024-06-06 02:30:29.308 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-06 02:30:29.718 +05:30 [DBG] Hosting starting
+2024-06-06 02:30:29.835 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-06 02:30:29.849 +05:30 [DBG] Reading data from file 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys\key-59435569-f291-4834-82c9-265f4864cec5.xml'.
+2024-06-06 02:30:29.880 +05:30 [DBG] Found key {59435569-f291-4834-82c9-265f4864cec5}.
+2024-06-06 02:30:29.909 +05:30 [DBG] Considering key {59435569-f291-4834-82c9-265f4864cec5} with expiration date 2024-08-03 20:42:24Z as default key.
+2024-06-06 02:30:29.916 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:30:29.924 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-06-06 02:30:29.928 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-06 02:30:29.939 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-06-06 02:30:29.945 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-06-06 02:30:29.951 +05:30 [DBG] Using key {59435569-f291-4834-82c9-265f4864cec5} as the default key.
+2024-06-06 02:30:29.954 +05:30 [DBG] Key ring with default key {59435569-f291-4834-82c9-265f4864cec5} was loaded during application startup.
+2024-06-06 02:30:30.396 +05:30 [INF] Now listening on: https://localhost:7140
+2024-06-06 02:30:30.400 +05:30 [INF] Now listening on: http://localhost:5215
+2024-06-06 02:30:30.404 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChallenge
+2024-06-06 02:30:30.407 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-06 02:30:30.409 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-06 02:30:30.413 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-06 02:30:30.414 +05:30 [INF] Hosting environment: Development
+2024-06-06 02:30:30.417 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimetricCodingChallange\AltimetricCodingChallange
+2024-06-06 02:30:30.419 +05:30 [DBG] Hosting started
+2024-06-06 02:30:30.506 +05:30 [DBG] Connection id "0HN45KA4BQ4IQ" accepted.
+2024-06-06 02:30:30.509 +05:30 [DBG] Connection id "0HN45KA4BQ4IQ" started.
+2024-06-06 02:30:30.514 +05:30 [DBG] Connection id "0HN45KA4BQ4IQ" received FIN.
+2024-06-06 02:30:30.656 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-06 02:30:30.766 +05:30 [DBG] Connection id "0HN45KA4BQ4IR" accepted.
+2024-06-06 02:30:30.835 +05:30 [DBG] Connection id "0HN45KA4BQ4IR" started.
+2024-06-06 02:30:30.842 +05:30 [DBG] Connection id "0HN45KA4BQ4IQ" stopped.
+2024-06-06 02:30:30.858 +05:30 [DBG] Connection id "0HN45KA4BQ4IQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-06 02:30:30.924 +05:30 [DBG] Connection 0HN45KA4BQ4IR established using the following protocol: "Tls12"
+2024-06-06 02:30:31.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/index.html - -
+2024-06-06 02:30:31.110 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-06 02:30:31.168 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-06-06 02:30:31.171 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:30:31.182 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2024-06-06 02:30:31.373 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-06-06 02:30:31.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - -
+2024-06-06 02:30:31.574 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_vs/browserLink - -
+2024-06-06 02:30:31.574 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html;charset=utf-8
+Date: Wed, 05 Jun 2024 21:00:31 GMT
+Server: Kestrel
+2024-06-06 02:30:31.604 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-06-06 02:30:31.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 42.5990ms
+2024-06-06 02:30:31.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/index.html - - - 200 - text/html;charset=utf-8 562.4842ms
+2024-06-06 02:30:31.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 183.0392ms
+2024-06-06 02:30:31.872 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - -
+2024-06-06 02:30:31.876 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-06 02:30:31.878 +05:30 [DBG] Request did not match any endpoints
+2024-06-06 02:30:31.880 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Host: localhost:7140
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2024-06-06 02:30:32.163 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json;charset=utf-8
+Date: Wed, 05 Jun 2024 21:00:31 GMT
+Server: Kestrel
+2024-06-06 02:30:32.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 294.0165ms

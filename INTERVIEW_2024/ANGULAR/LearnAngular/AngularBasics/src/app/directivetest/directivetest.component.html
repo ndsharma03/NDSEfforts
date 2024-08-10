@@ -1,0 +1,16 @@
+<p>directivetest works!</p>
+
+<button name="btn1" (click)="btn_click()">click me!</button>
+<label *ngIf="showHide"> this is the example of *ngIf directive, this msg will show hide on btn click!</label>
+<p> Example of If ..else and local reference variable</p>
+
+
+<label *ngIf="showHide; else redlabel" style="background-color:green">greenLabel</label>
+<ng-template #redlabel>
+  <label style="background-color:red">redLabel</label>
+</ng-template>
+<div>
+  <label> using ngStyle (Attribute Directive)</label>
+  <button name="btn3" (click)="btnChangeStyle()">change style</button>
+  <label [ngStyle]="{backgroundColor:getColor()}"> My color chages by ngStyle</label>
+</div>
