@@ -1,23 +1,24 @@
 
-using AltimerticCodeChanllenge.DataAccess;
-using AltimerticCodeChanllenge.DataAccess.Dapper;
-using AltimerticCodeChanllenge.DataAccess.EFCore;
+using AltimerticCodeChallenge.DataAccess;
+using AltimerticCodeChallenge.DataAccess.Dapper;
+using AltimerticCodeChallenge.DataAccess.EFCore;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using AltimerticCodeChanllenge.DTO;
+using AltimerticCodeChallenge.DTO;
 using Microsoft.OpenApi.Models;
 
-namespace AltimerticCodeChanllenge
+namespace AltimerticCodeChallenge
 {
+    
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            
+
             //Logging configuration
 
             Log.Logger = new LoggerConfiguration()
@@ -101,10 +102,13 @@ namespace AltimerticCodeChanllenge
 
             builder.Services.Configure<JWTOptions>(builder.Configuration.GetSection(JWTOptions.JWTSettings));
 
-           
-            var app = builder.Build();
+            //Using HTTP Logging middleware
+            builder.Services.AddHttpLogging(o => { });
 
-           
+            var app = builder.Build();
+            
+            app.UseHttpLogging();//HTTP Logging middleware.
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

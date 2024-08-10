@@ -1,8 +1,8 @@
-﻿using AltimerticCodeChanllenge.Entities;
+﻿using AltimerticCodeChallenge.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace AltimerticCodeChanllenge.DataAccess.EFCore
+namespace AltimerticCodeChallenge.DataAccess.EFCore
 {
     public class DrugDBContext:DbContext
     {

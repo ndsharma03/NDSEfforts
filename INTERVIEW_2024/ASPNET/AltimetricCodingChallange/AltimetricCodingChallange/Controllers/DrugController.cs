@@ -1,12 +1,12 @@
-﻿using AltimerticCodeChanllenge.DataAccess;
-using AltimerticCodeChanllenge.DTO;
-using AltimerticCodeChanllenge.Entities;
+﻿using AltimerticCodeChallenge.DataAccess;
+using AltimerticCodeChallenge.DTO;
+using AltimerticCodeChallenge.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query;
 using static Dapper.SqlMapper;
 
-namespace AltimerticCodeChanllenge.Controllers
+namespace AltimerticCodeChallenge.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

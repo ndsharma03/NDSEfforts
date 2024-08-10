@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
-namespace AltimerticCodeChanllenge.Entities
+namespace AltimerticCodeChallenge.Entities
 {
     public class Drug
     {

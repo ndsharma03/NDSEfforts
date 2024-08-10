@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace AltimerticCodeChanllenge.Controllers
+namespace AltimerticCodeChallenge.Controllers
 {
    
     [ApiController]

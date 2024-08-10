@@ -1,13 +1,13 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc;
-using AltimerticCodeChanllenge.DTO;
+using AltimerticCodeChallenge.DTO;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Linq;
 
-namespace AltimerticCodeChanllenge.Controllers
+namespace AltimerticCodeChallenge.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

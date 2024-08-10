@@ -1,8 +1,8 @@
-﻿using AltimerticCodeChanllenge.DTO;
-using AltimerticCodeChanllenge.Entities;
+﻿using AltimerticCodeChallenge.DTO;
+using AltimerticCodeChallenge.Entities;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
-namespace AltimerticCodeChanllenge.DataAccess
+namespace AltimerticCodeChallenge.DataAccess
 {
     public interface IDrugRepository
     {

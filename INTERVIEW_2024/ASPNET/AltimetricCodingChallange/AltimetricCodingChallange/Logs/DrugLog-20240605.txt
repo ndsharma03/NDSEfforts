@@ -13,12 +13,12 @@
 2024-06-05 00:04:55.593 +05:30 [DBG] Key ring with default key {59435569-f291-4834-82c9-265f4864cec5} was loaded during application startup.
 2024-06-05 00:04:56.171 +05:30 [INF] Now listening on: https://localhost:7140
 2024-06-05 00:04:56.177 +05:30 [INF] Now listening on: http://localhost:5215
-2024-06-05 00:04:56.181 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChanllenge
+2024-06-05 00:04:56.181 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChallenge
 2024-06-05 00:04:56.184 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
 2024-06-05 00:04:56.186 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
 2024-06-05 00:04:56.189 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2024-06-05 00:04:56.191 +05:30 [INF] Hosting environment: Development
-2024-06-05 00:04:56.194 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimerticCodeChanllenge
+2024-06-05 00:04:56.194 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimerticCodeChallenge
 2024-06-05 00:04:56.196 +05:30 [DBG] Hosting started
 2024-06-05 00:04:56.249 +05:30 [DBG] Connection id "0HN44OK44R332" accepted.
 2024-06-05 00:04:56.258 +05:30 [DBG] Connection id "0HN44OK44R332" started.
@@ -48,29 +48,29 @@
 2024-06-05 00:05:07.391 +05:30 [DBG] Connection id "0HN44OK44R333" sending FIN because: "The Socket transport's send loop completed gracefully."
 2024-06-05 00:06:17.980 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7140/api/Auth application/json 57
 2024-06-05 00:06:18.003 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth'
-2024-06-05 00:06:18.013 +05:30 [DBG] Endpoint 'AltimerticCodeChanllenge.Controllers.AuthController.GenerateToken (AltimerticCodeChanllenge)' with route pattern 'api/Auth' is valid for the request path '/api/Auth'
-2024-06-05 00:06:18.018 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChanllenge.Controllers.AuthController.GenerateToken (AltimerticCodeChanllenge)'
+2024-06-05 00:06:18.013 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)' with route pattern 'api/Auth' is valid for the request path '/api/Auth'
+2024-06-05 00:06:18.018 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
 2024-06-05 00:06:18.024 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
 2024-06-05 00:06:18.277 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
-2024-06-05 00:06:18.283 +05:30 [INF] Executing endpoint 'AltimerticCodeChanllenge.Controllers.AuthController.GenerateToken (AltimerticCodeChanllenge)'
-2024-06-05 00:06:18.332 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(AltimerticCodeChanllenge.DTO.User) on controller AltimerticCodeChanllenge.Controllers.AuthController (AltimerticCodeChanllenge).
+2024-06-05 00:06:18.283 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-05 00:06:18.332 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(AltimerticCodeChallenge.DTO.User) on controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge).
 2024-06-05 00:06:18.340 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
 2024-06-05 00:06:18.344 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
 2024-06-05 00:06:18.348 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
 2024-06-05 00:06:18.353 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
 2024-06-05 00:06:18.356 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
-2024-06-05 00:06:18.363 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChanllenge.Controllers.AuthController (AltimerticCodeChanllenge)
-2024-06-05 00:06:18.372 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChanllenge.Controllers.AuthController (AltimerticCodeChanllenge)
-2024-06-05 00:06:18.418 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User' ...
-2024-06-05 00:06:18.427 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User' using the name '' in request data ...
+2024-06-05 00:06:18.363 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-05 00:06:18.372 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-05 00:06:18.418 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-05 00:06:18.427 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' using the name '' in request data ...
 2024-06-05 00:06:18.433 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
 2024-06-05 00:06:18.450 +05:30 [DBG] Connection id "0HN44OK44R334", Request id "0HN44OK44R334:00000007": started reading request body.
 2024-06-05 00:06:18.454 +05:30 [DBG] Connection id "0HN44OK44R334", Request id "0HN44OK44R334:00000007": done reading request body.
-2024-06-05 00:06:18.465 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'AltimerticCodeChanllenge.DTO.User'
-2024-06-05 00:06:18.468 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User'.
-2024-06-05 00:06:18.470 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User'.
-2024-06-05 00:06:18.472 +05:30 [DBG] Attempting to validate the bound parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User' ...
-2024-06-05 00:06:18.488 +05:30 [DBG] Done attempting to validate the bound parameter 'user' of type 'AltimerticCodeChanllenge.DTO.User'.
+2024-06-05 00:06:18.465 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'AltimerticCodeChallenge.DTO.User'
+2024-06-05 00:06:18.468 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-05 00:06:18.470 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-05 00:06:18.472 +05:30 [DBG] Attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-05 00:06:18.488 +05:30 [DBG] Done attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
 2024-06-05 00:06:18.496 +05:30 [INF] Enter : GenerateToken()
 2024-06-05 00:06:18.909 +05:30 [INF] Exit : GenerateToken()
 2024-06-05 00:06:18.914 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
@@ -79,13 +79,13 @@
 2024-06-05 00:06:18.926 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
 2024-06-05 00:06:18.928 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
 2024-06-05 00:06:18.931 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
-2024-06-05 00:06:18.949 +05:30 [INF] Executed action AltimerticCodeChanllenge.Controllers.AuthController.GenerateToken (AltimerticCodeChanllenge) in 574.9945ms
-2024-06-05 00:06:18.952 +05:30 [INF] Executed endpoint 'AltimerticCodeChanllenge.Controllers.AuthController.GenerateToken (AltimerticCodeChanllenge)'
+2024-06-05 00:06:18.949 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge) in 574.9945ms
+2024-06-05 00:06:18.952 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
 2024-06-05 00:06:18.955 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7140/api/Auth application/json 57 - 200 - text/plain;+charset=utf-8 974.6782ms
 2024-06-05 00:06:28.638 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/api/Drug - -
 2024-06-05 00:06:28.641 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Drug'
-2024-06-05 00:06:28.645 +05:30 [DBG] Endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
-2024-06-05 00:06:28.653 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)'
+2024-06-05 00:06:28.645 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
+2024-06-05 00:06:28.653 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
 2024-06-05 00:06:28.657 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
 2024-06-05 00:06:28.662 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
 2024-06-05 00:06:28.684 +05:30 [INF] Authorization failed. These requirements were not met:
@@ -94,21 +94,21 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-06-05 00:06:28.698 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/api/Drug - - - 401 0 - 59.9396ms
 2024-06-05 00:06:41.367 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/api/Drug - -
 2024-06-05 00:06:41.370 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Drug'
-2024-06-05 00:06:41.389 +05:30 [DBG] Endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
-2024-06-05 00:06:41.393 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)'
+2024-06-05 00:06:41.389 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
+2024-06-05 00:06:41.393 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
 2024-06-05 00:06:41.396 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
 2024-06-05 00:06:41.491 +05:30 [DBG] Successfully validated the token.
 2024-06-05 00:06:41.494 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
 2024-06-05 00:06:41.498 +05:30 [DBG] Authorization was successful.
-2024-06-05 00:06:41.500 +05:30 [INF] Executing endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)'
-2024-06-05 00:06:41.517 +05:30 [INF] Route matched with {action = "GetAll", controller = "Drug"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller AltimerticCodeChanllenge.Controllers.DrugController (AltimerticCodeChanllenge).
+2024-06-05 00:06:41.500 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-05 00:06:41.517 +05:30 [INF] Route matched with {action = "GetAll", controller = "Drug"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge).
 2024-06-05 00:06:41.521 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
 2024-06-05 00:06:41.524 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
 2024-06-05 00:06:41.526 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
 2024-06-05 00:06:41.531 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
 2024-06-05 00:06:41.534 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
-2024-06-05 00:06:41.539 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChanllenge.Controllers.DrugController (AltimerticCodeChanllenge)
-2024-06-05 00:06:41.542 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChanllenge.Controllers.DrugController (AltimerticCodeChanllenge)
+2024-06-05 00:06:41.539 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
+2024-06-05 00:06:41.542 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
 2024-06-05 00:06:41.547 +05:30 [INF] Enter: DrugController.GetAll()
 2024-06-05 00:06:41.569 +05:30 [INF] Enter: DrugReposiotry.GetAll
 2024-06-05 00:06:42.822 +05:30 [INF] Exit: DrugReposiotry.GetAll
@@ -118,7 +118,123 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-06-05 00:06:42.839 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
 2024-06-05 00:06:42.840 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
 2024-06-05 00:06:42.843 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
-2024-06-05 00:06:42.846 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AltimerticCodeChanllenge.Entities.Drug, AltimerticCodeChanllenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
-2024-06-05 00:06:42.890 +05:30 [INF] Executed action AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge) in 1350.6871ms
-2024-06-05 00:06:42.894 +05:30 [INF] Executed endpoint 'AltimerticCodeChanllenge.Controllers.DrugController.GetAll (AltimerticCodeChanllenge)'
+2024-06-05 00:06:42.846 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AltimerticCodeChallenge.Entities.Drug, AltimerticCodeChallenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-05 00:06:42.890 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge) in 1350.6871ms
+2024-06-05 00:06:42.894 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
 2024-06-05 00:06:42.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/api/Drug - - - 200 - application/json;+charset=utf-8 1531.3500ms
+2024-06-05 00:47:25.896 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-05 00:47:26.874 +05:30 [DBG] Hosting starting
+2024-06-05 00:47:27.041 +05:30 [INF] User profile is available. Using 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-05 00:47:27.057 +05:30 [DBG] Reading data from file 'C:\Users\Dell\AppData\Local\ASP.NET\DataProtection-Keys\key-59435569-f291-4834-82c9-265f4864cec5.xml'.
+2024-06-05 00:47:27.100 +05:30 [DBG] Found key {59435569-f291-4834-82c9-265f4864cec5}.
+2024-06-05 00:47:27.137 +05:30 [DBG] Considering key {59435569-f291-4834-82c9-265f4864cec5} with expiration date 2024-08-03 20:42:24Z as default key.
+2024-06-05 00:47:27.146 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-05 00:47:27.155 +05:30 [DBG] Decrypting secret element using Windows DPAPI.
+2024-06-05 00:47:27.162 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-06-05 00:47:27.177 +05:30 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-06-05 00:47:27.183 +05:30 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-06-05 00:47:27.193 +05:30 [DBG] Using key {59435569-f291-4834-82c9-265f4864cec5} as the default key.
+2024-06-05 00:47:27.198 +05:30 [DBG] Key ring with default key {59435569-f291-4834-82c9-265f4864cec5} was loaded during application startup.
+2024-06-05 00:47:27.771 +05:30 [INF] Now listening on: https://localhost:7140
+2024-06-05 00:47:27.776 +05:30 [INF] Now listening on: http://localhost:5215
+2024-06-05 00:47:27.780 +05:30 [DBG] Loaded hosting startup assembly AltimerticCodeChallenge
+2024-06-05 00:47:27.795 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-05 00:47:27.798 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-05 00:47:27.801 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 00:47:27.803 +05:30 [INF] Hosting environment: Development
+2024-06-05 00:47:27.805 +05:30 [INF] Content root path: S:\NIRANJAN_TECH\CodeOnGit\NDSEfforts\INTERVIEW_2024\ASPNET\AltimetricCodingChallange\AltimetricCodingChallange
+2024-06-05 00:47:27.808 +05:30 [DBG] Hosting started
+2024-06-05 00:47:27.854 +05:30 [DBG] Connection id "0HN44PBSIQVRN" accepted.
+2024-06-05 00:47:27.860 +05:30 [DBG] Connection id "0HN44PBSIQVRN" started.
+2024-06-05 00:47:28.022 +05:30 [DBG] Connection id "0HN44PBSIQVRO" accepted.
+2024-06-05 00:47:28.026 +05:30 [DBG] Connection id "0HN44PBSIQVRO" started.
+2024-06-05 00:47:29.054 +05:30 [DBG] Connection id "0HN44PBSIQVRP" accepted.
+2024-06-05 00:47:29.063 +05:30 [DBG] Connection id "0HN44PBSIQVRP" started.
+2024-06-05 00:47:29.262 +05:30 [DBG] Connection 0HN44PBSIQVRP established using the following protocol: "Tls12"
+2024-06-05 00:47:29.497 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/index.html - -
+2024-06-05 00:47:29.584 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-05 00:47:29.667 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-06-05 00:47:29.671 +05:30 [DBG] Request did not match any endpoints
+2024-06-05 00:47:29.958 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-06-05 00:47:30.397 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-06-05 00:47:30.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - -
+2024-06-05 00:47:30.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/_vs/browserLink - -
+2024-06-05 00:47:30.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/index.html - - - 200 - text/html;charset=utf-8 974.9765ms
+2024-06-05 00:47:30.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_framework/aspnetcore-browser-refresh.js - - - 200 12016 application/javascript;+charset=utf-8 135.0010ms
+2024-06-05 00:47:30.764 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 320.6417ms
+2024-06-05 00:47:30.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - -
+2024-06-05 00:47:30.910 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-05 00:47:30.913 +05:30 [DBG] Request did not match any endpoints
+2024-06-05 00:47:31.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 354.8245ms
+2024-06-05 00:47:38.321 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-05 00:47:38.369 +05:30 [DBG] Authentication of the HTTPS connection timed out.
+2024-06-05 00:47:38.375 +05:30 [DBG] Connection id "0HN44PBSIQVRO" stopped.
+2024-06-05 00:47:38.375 +05:30 [DBG] Connection id "0HN44PBSIQVRN" stopped.
+2024-06-05 00:47:38.378 +05:30 [DBG] Connection id "0HN44PBSIQVRO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-05 00:47:38.380 +05:30 [DBG] Connection id "0HN44PBSIQVRN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-05 00:48:05.605 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7140/api/Auth application/json 57
+2024-06-05 00:48:05.626 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Auth'
+2024-06-05 00:48:05.638 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)' with route pattern 'api/Auth' is valid for the request path '/api/Auth'
+2024-06-05 00:48:05.642 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-05 00:48:05.647 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-05 00:48:07.040 +05:30 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-06-05 00:48:07.046 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-05 00:48:07.076 +05:30 [INF] Route matched with {action = "GenerateToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GenerateToken(AltimerticCodeChallenge.DTO.User) on controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge).
+2024-06-05 00:48:07.084 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-05 00:48:07.087 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-05 00:48:07.089 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-05 00:48:07.093 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-05 00:48:07.096 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-05 00:48:07.101 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-05 00:48:07.105 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.AuthController (AltimerticCodeChallenge)
+2024-06-05 00:48:07.133 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-05 00:48:07.143 +05:30 [DBG] Attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' using the name '' in request data ...
+2024-06-05 00:48:07.149 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-06-05 00:48:07.166 +05:30 [DBG] Connection id "0HN44PBSIQVRP", Request id "0HN44PBSIQVRP:00000009": started reading request body.
+2024-06-05 00:48:07.169 +05:30 [DBG] Connection id "0HN44PBSIQVRP", Request id "0HN44PBSIQVRP:00000009": done reading request body.
+2024-06-05 00:48:07.179 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'AltimerticCodeChallenge.DTO.User'
+2024-06-05 00:48:07.182 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-05 00:48:07.186 +05:30 [DBG] Done attempting to bind parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-05 00:48:07.190 +05:30 [DBG] Attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User' ...
+2024-06-05 00:48:07.210 +05:30 [DBG] Done attempting to validate the bound parameter 'user' of type 'AltimerticCodeChallenge.DTO.User'.
+2024-06-05 00:48:07.219 +05:30 [INF] Enter : GenerateToken()
+2024-06-05 00:48:07.572 +05:30 [INF] Exit : GenerateToken()
+2024-06-05 00:48:07.579 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-05 00:48:07.589 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-06-05 00:48:07.591 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-05 00:48:07.594 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-05 00:48:07.598 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-06-05 00:48:07.601 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-06-05 00:48:07.615 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge) in 507.1529ms
+2024-06-05 00:48:07.618 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.AuthController.GenerateToken (AltimerticCodeChallenge)'
+2024-06-05 00:48:07.621 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7140/api/Auth application/json 57 - 200 - text/plain;+charset=utf-8 2016.0881ms
+2024-06-05 00:48:27.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7140/api/Drug - -
+2024-06-05 00:48:27.120 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Drug'
+2024-06-05 00:48:27.128 +05:30 [DBG] Endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)' with route pattern 'api/Drug' is valid for the request path '/api/Drug'
+2024-06-05 00:48:27.134 +05:30 [DBG] Request matched endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-05 00:48:27.138 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-05 00:48:27.215 +05:30 [DBG] Successfully validated the token.
+2024-06-05 00:48:27.220 +05:30 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2024-06-05 00:48:27.229 +05:30 [DBG] Authorization was successful.
+2024-06-05 00:48:27.231 +05:30 [INF] Executing endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-05 00:48:27.247 +05:30 [INF] Route matched with {action = "GetAll", controller = "Drug"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge).
+2024-06-05 00:48:27.251 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-05 00:48:27.253 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-05 00:48:27.256 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-05 00:48:27.259 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-05 00:48:27.262 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-05 00:48:27.264 +05:30 [DBG] Executing controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
+2024-06-05 00:48:27.269 +05:30 [DBG] Executed controller factory for controller AltimerticCodeChallenge.Controllers.DrugController (AltimerticCodeChallenge)
+2024-06-05 00:48:27.276 +05:30 [INF] Enter: DrugController.GetAll()
+2024-06-05 00:48:27.523 +05:30 [INF] Enter: DrugReposiotry.GetAll
+2024-06-05 00:48:29.016 +05:30 [INF] Exit: DrugReposiotry.GetAll
+2024-06-05 00:48:29.018 +05:30 [INF] Exit: DrugController.GetAll()
+2024-06-05 00:48:29.023 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-05 00:48:29.027 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-06-05 00:48:29.028 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-05 00:48:29.031 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-05 00:48:29.034 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-05 00:48:29.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AltimerticCodeChallenge.Entities.Drug, AltimerticCodeChallenge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-05 00:48:29.064 +05:30 [INF] Executed action AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge) in 1798.5219ms
+2024-06-05 00:48:29.068 +05:30 [INF] Executed endpoint 'AltimerticCodeChallenge.Controllers.DrugController.GetAll (AltimerticCodeChallenge)'
+2024-06-05 00:48:29.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7140/api/Drug - - - 200 - application/json;+charset=utf-8 1965.1662ms

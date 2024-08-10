@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AltimerticCodeChanllenge", "AltimerticCodeChanllenge.csproj", "{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AltimerticCodeChallenge", "AltimerticCodeChallenge.csproj", "{D66EB8F1-B45C-4AF9-A047-D371E508DF7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugApiTests", "..\DrugApiTests\DrugApiTests.csproj", "{8B72AA7D-6567-43DD-B52A-E68068A2B302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugApiTests", "..\DrugApiTests\DrugApiTests.csproj", "{8B72AA7D-6567-43DD-B52A-E68068A2B302}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

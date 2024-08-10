@@ -24,11 +24,12 @@ namespace WebApplication1.Controllers
             return context.Customers.Include(cust=>cust.Invoices).ThenInclude(inv=>inv.Items).AsAsyncEnumerable();
      
         }
-//        [HttpPost]
-//        public IActionResult Create(Employee emp)
-//        {
-//            return CreatedAtAction("test", new { Id = emp.Id }, emp);
-//;        }
+        [HttpPost]
+        public IActionResult Create(Employee emp)
+        {
+            return CreatedAtAction("test", new { Id = emp.Id }, emp);
+            ;
+        }
     }
     public class Employee
     {

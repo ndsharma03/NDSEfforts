@@ -1,4 +1,4 @@
-﻿namespace AltimerticCodeChanllenge.DTO
+﻿namespace AltimerticCodeChallenge.DTO
 {
     public class JWTOptions
     {

@@ -1,12 +1,12 @@
-﻿using AltimerticCodeChanllenge.DataAccess.Dapper;
-using AltimerticCodeChanllenge.DTO;
-using AltimerticCodeChanllenge.Entities;
+﻿using AltimerticCodeChallenge.DataAccess.Dapper;
+using AltimerticCodeChallenge.DTO;
+using AltimerticCodeChallenge.Entities;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
-namespace AltimerticCodeChanllenge.DataAccess
+namespace AltimerticCodeChallenge.DataAccess
 {
     public class DrugReposiotry : IDrugRepository
     {

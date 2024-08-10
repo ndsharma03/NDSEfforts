@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AltimerticCodeChanllenge.DTO
+namespace AltimerticCodeChallenge.DTO
 {
     public class DrugDTO
     {

@@ -1,5 +1,7 @@
 
 using Microsoft.AspNetCore.RateLimiting;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
 
 namespace RateLimitterTEst
@@ -26,7 +28,9 @@ namespace RateLimitterTEst
             app.Use(async (context, next) =>
             {
                 Console.WriteLine("Custom middleware before");
+                Console.WriteLine(JsonSerializer.Serialize(context.Request));
                 await next(context);
+               
                 Console.WriteLine("Custom middleware After!");
             });
 

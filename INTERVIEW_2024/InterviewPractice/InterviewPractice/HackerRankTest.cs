@@ -10,20 +10,20 @@ namespace InterviewPractice
 {
     internal class HackerRankTest
     {
-        public static void Main()
-        {
-            // for (int i = 1; i < 31; i++) FizzBuzz2(i);
-            //ListOperationsHackerRank();
-            //MinMaxOf4Numbers();
+        //public static void Main()
+        //{
+        //    // for (int i = 1; i < 31; i++) FizzBuzz2(i);
+        //    //ListOperationsHackerRank();
+        //    //MinMaxOf4Numbers();
 
 
-            //foreach(var i in  GetDigits(125).Reverse()) Console.Write(i +" ");
-            // Console.WriteLine();
+        //    //foreach(var i in  GetDigits(125).Reverse()) Console.Write(i +" ");
+        //    // Console.WriteLine();
             
-            Console.WriteLine(CalculateFactorial(30));
+        //    Console.WriteLine(CalculateFactorial(30));
 
 
-        }
+        //}
 
         //below code uses BigInteger to store extemely large number 
         static BigInteger CalculateFactorial(int n)

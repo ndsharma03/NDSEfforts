@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace AltimerticCodeChanllenge.Migrations
+namespace AltimerticCodeChallenge.Migrations
 {
     public partial class Addedvalidationforentities : Migration
     {

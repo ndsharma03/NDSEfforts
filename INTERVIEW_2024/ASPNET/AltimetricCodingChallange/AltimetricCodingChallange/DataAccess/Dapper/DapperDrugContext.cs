@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
 
-namespace AltimerticCodeChanllenge.DataAccess.Dapper
+namespace AltimerticCodeChallenge.DataAccess.Dapper
 {
     public class DapperDrugContext
     {

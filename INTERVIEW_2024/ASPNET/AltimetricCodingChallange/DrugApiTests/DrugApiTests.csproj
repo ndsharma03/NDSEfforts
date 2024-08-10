@@ -24,12 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Dell\Desktop\AltimerticCodeChanllenge\AltimerticCodeChanllenge.csproj" />
+    <ProjectReference Include="..\AltimetricCodingChallange\AltimerticCodeChallenge.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="AltimerticCodeChanllenge">
-      <HintPath>..\AltimetricCodingChallange\bin\Debug\net7.0\AltimerticCodeChanllenge.dll</HintPath>
+    <Reference Include="AltimerticCodeChallenge">
+      <HintPath>..\AltimetricCodingChallange\bin\Debug\net7.0\AltimerticCodeChallenge.dll</HintPath>
     </Reference>
   </ItemGroup>
 
